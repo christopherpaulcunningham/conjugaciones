@@ -1,0 +1,33 @@
+.header{
+    align-items: center;
+	background-color: #ffffff;
+	color: #b11409;
+    display: flex;
+    height: 5em;
+	justify-content: space-between;
+	width: 100%;
+}
+
+.title{
+    font-size: 2em;
+    font-weight: 500;
+	padding: 0 2em;
+}
+
+.nav-menu {
+	list-style: none;
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 2rem;
+}
+
+.link:hover {
+	color: #dd3b2f;
+}
+
+.link, .home-link{
+	padding: 10px 15px;
+	text-decoration: none;
+	color: #b11409;
+	text-decoration: none;
+}
