@@ -175,7 +175,7 @@ const rootReducer = (state = initialState, action) => {
 		case actionTypes.TOGGLE_PRONOUN:
 			return {
 				...state,
-				pronoun: state.pronouns.map((pronoun) => {
+				pronouns: state.pronouns.map((pronoun) => {
 					if (pronoun.pronoun === action.pronoun.pronoun) {
 						return { ...pronoun, selected: !pronoun.selected };
 					}
@@ -202,7 +202,7 @@ const rootReducer = (state = initialState, action) => {
 				...state,
 				verbSettings: {
 					...state.verbSettings,
-					userVerbsString: action.verbsString,
+					userDefinedVerbs: action.verbsString,
 				},
 			};
 		default:
