@@ -1,0 +1,25 @@
+.options-container {
+	display: flex;
+	flex-direction: row;
+    justify-content: center;
+}
+
+#selection-column{
+    border-top: 4px solid #ced125;
+}
+
+#settings-column{
+    border-top: 4px solid #d13925;
+}
+
+.column-header{
+    font-weight: 700;
+    padding-bottom: 0.55em;
+    text-align: center;
+}
+
+.section-header{
+    font-weight: 500;
+    height: 2em;
+    padding-bottom: 2em;
+}
