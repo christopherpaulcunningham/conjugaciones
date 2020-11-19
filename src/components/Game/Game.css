@@ -1,0 +1,59 @@
+.game-container {
+    border: 1px solid red;
+    margin: auto;
+    padding: 1em 1em 2em 1em;
+    width:70%;
+}
+
+.nav-button{
+    width: 50%;
+    float: left;
+}
+.score-container{
+    width: 50%;
+    float: right;
+    text-align: right;
+}
+
+.game-section{
+    margin: 2em auto 1em;
+    text-align: center;
+    width: 40%;
+}
+
+.section-title{
+    margin-bottom: 0.7em;
+}
+
+#verb{
+    margin-bottom: 1em;
+}
+#spanish-verb, #english-verb{
+    font-size: 1.2em;
+    font-weight: 600;
+}
+
+#tense-pronoun{
+    margin-bottom: 1em;
+}
+
+.game-label{
+    text-align: center;
+    width: 6em;
+}
+
+#answer-input{
+    margin-bottom: 1em;
+}
+
+.button-container button{
+    height: 2em;
+    margin: 0.3em;    
+    text-align: center;
+    width: 2em;
+}
+
+#btn-submit{
+    float: right;
+    /* background-image: url(../../assets/enter.png); */
+}
