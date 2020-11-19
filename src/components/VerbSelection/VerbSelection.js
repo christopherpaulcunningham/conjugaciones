@@ -12,6 +12,11 @@ export default function VerbSelection() {
 		<div className="settings-column" id="selection-column">
 			<div className="column-header">Tenses and Moods</div>
 			<p className="help-text">(Hover over the tense for more information)</p>
+			<div className="validation-message">
+			{tenses.every((tense) => !tense.selected) && (
+				<span>* Select at least one tense.</span>
+			)}
+			</div>
 			<div className="options-section-left">
 				<span className="section-header">Indicative</span>
 				<div className="options-section">
@@ -98,23 +103,6 @@ export default function VerbSelection() {
 							</div>
 						))}
 				</div>
-				{/* <span className="section-header">Perfect Subjunctive</span>
-				<div className="options-section">
-					{tenses
-						.filter((tense) => tense.category === "perfect-subjunctive")
-						.map((tense) => (
-							<div key={tense.tense}>
-								<TenseItem
-									key={tense.tense}
-									id={tense.tense}
-									name={tense.name}
-									selected={tense.selected}
-									example={tense.example}
-									onClick={() => dispatch(toggleTense(tense))}
-								/>
-							</div>
-						))}
-				</div> */}
 			</div>
 		</div>
 	);

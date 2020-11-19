@@ -144,7 +144,7 @@ const initialState = {
 		irregularVerbs: verbOptions.INCLUDE,
 		reflexiveVerbs: verbOptions.INCLUDE,
 		selectedVerbs: verbOptions.ALL,
-		userDefinedVerbs: " ",      // Verbs the user has entered.
+		userDefinedVerbs: "",      // Verbs the user has entered.
 		validUserDefinedVerbs: [],  // Verbs the user has entered that are valid verbs.
 	},
 	score: 0,

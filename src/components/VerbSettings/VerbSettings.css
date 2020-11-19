@@ -24,9 +24,27 @@
 }
 
 #custom-verbs{
-    margin-top: 1em;
+    /* margin-top: 1em; */
     height:4em;
     width: 100%;
+}
+
+.validation-message{
+    color: #ff0000;
+    font-size: 0.8em;
+    height:0.5em;
+    margin-bottom: 1em;
+    text-align: left;
+}
+
+.button-section{
+    display: flex;
+}
+#button-message{
+    color: #ff0000;
+    font-size: 0.8em;
+    margin: 1.2em 1em;
+    padding: 0.5em;
 }
 
  
