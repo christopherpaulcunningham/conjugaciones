@@ -4,7 +4,8 @@ export const actionTypes = {
 	SET_IRREGULAR: "SET_IRREGULAR",
 	SET_REFLEXIVE: "SET_REFLEXIVE",
 	SET_SELECTED_VERBS: "SET_SELECTED_VERBS",
-	SET_USER_DEFINED_VERBS: "SET_USER_DEFINED_VERBS"
+	SET_USER_DEFINED_VERBS: "SET_USER_DEFINED_VERBS",
+	SET_USER_ANSWER: "SET_USER_ANSWER"
 };
 
 export const verbOptions = {
@@ -38,4 +39,8 @@ export function setSelectedVerbs(option) {
 export function setUserDefinedVerbs(verbsString) {
 	// TODO: CHECK IF THE VERBS DEFINED BY THE USER ARE VALID. IF SO, ADD TO VALID VERBS ARRAY.
 	return { type: actionTypes.SET_USER_DEFINED_VERBS, verbsString };
+}
+
+export function setUserAnswer(answer) {
+	return { type: actionTypes.SET_USER_ANSWER, answer };
 }
