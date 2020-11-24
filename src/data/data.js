@@ -110,7 +110,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["aborda"],
 			el: ["aborde"],
@@ -238,7 +238,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["aborta"],
 			el: ["aborte"],
@@ -366,7 +366,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["abraza"],
 			el: ["abrace"],
@@ -494,7 +494,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["abre"],
 			el: ["abra"],
@@ -622,7 +622,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["aburre"],
 			el: ["aburra"],
@@ -750,7 +750,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["abúrrete"],
 			el: ["abúrrase"],
@@ -878,7 +878,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["abusa"],
 			el: ["abuse"],
@@ -1006,7 +1006,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["acaba"],
 			el: ["acabe"],
@@ -1134,7 +1134,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["acampa"],
 			el: ["acampe"],
@@ -1262,7 +1262,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["acepta"],
 			el: ["acepte"],
@@ -1390,7 +1390,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["acerca"],
 			el: ["acerque"],
@@ -1518,7 +1518,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["acércate"],
 			el: ["acérquese"],
@@ -1646,7 +1646,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["acompaña"],
 			el: ["acompañe"],
@@ -1774,7 +1774,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["aconseja"],
 			el: ["aconseje"],
@@ -1902,7 +1902,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["acontece"],
 			el: ["acontezca"],
@@ -2030,7 +2030,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["acuerda"],
 			el: ["acuerde"],
@@ -2158,7 +2158,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["acuérdate"],
 			el: ["acuérdese"],
@@ -2286,7 +2286,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["acorta"],
 			el: ["acorte"],
@@ -2414,7 +2414,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["acuesta"],
 			el: ["acueste"],
@@ -2542,7 +2542,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["acuéstate"],
 			el: ["acuéstese"],
@@ -2670,7 +2670,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["acostumbra"],
 			el: ["acostumbre"],
@@ -2798,7 +2798,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["acostúmbrate"],
 			el: ["acostúmbrese"],
@@ -2926,7 +2926,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["actúa"],
 			el: ["actúe"],
@@ -3054,7 +3054,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["adivina"],
 			el: ["adivine"],
@@ -3182,7 +3182,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["admira"],
 			el: ["admire"],
@@ -3310,7 +3310,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["admite"],
 			el: ["admita"],
@@ -3438,7 +3438,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["adora"],
 			el: ["adore"],
@@ -3566,7 +3566,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["adorna"],
 			el: ["adorne"],
@@ -3694,7 +3694,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["advierte"],
 			el: ["advierta"],
@@ -3822,7 +3822,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["afeita"],
 			el: ["afeite"],
@@ -3950,7 +3950,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["aféitate"],
 			el: ["aféitese"],
@@ -4078,7 +4078,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["afirma"],
 			el: ["afirme"],
@@ -4206,7 +4206,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["aflige"],
 			el: ["aflija"],
@@ -4334,7 +4334,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["agüera"],
 			el: ["agüere"],
@@ -4462,7 +4462,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["agrada"],
 			el: ["agrade"],
@@ -4590,7 +4590,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["agradece"],
 			el: ["agradezca"],
@@ -4718,7 +4718,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["aguanta"],
 			el: ["aguante"],
@@ -4846,7 +4846,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["ahorca"],
 			el: ["ahorque"],
@@ -4974,7 +4974,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["ahorra"],
 			el: ["ahorre"],
@@ -5102,7 +5102,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["alcanza"],
 			el: ["alcance"],
@@ -5230,7 +5230,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["alegra"],
 			el: ["alegre"],
@@ -5358,7 +5358,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["alégrate"],
 			el: ["alégrese"],
@@ -5486,7 +5486,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["alienta"],
 			el: ["aliente"],
@@ -5614,7 +5614,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["alivia"],
 			el: ["alivie"],
@@ -5742,7 +5742,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["almuerza"],
 			el: ["almuerce"],
@@ -5870,7 +5870,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["alquila"],
 			el: ["alquile"],
@@ -5998,7 +5998,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["amanece"],
 			el: ["amanezca"],
@@ -6126,7 +6126,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["ama"],
 			el: ["ame"],
@@ -6254,7 +6254,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["amenaza"],
 			el: ["amenace"],
@@ -6382,7 +6382,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["añade"],
 			el: ["añada"],
@@ -6510,7 +6510,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["anda"],
 			el: ["ande"],
@@ -6638,7 +6638,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["anhela"],
 			el: ["anhele"],
@@ -6766,7 +6766,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["anuncia"],
 			el: ["anuncie"],
@@ -6894,7 +6894,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["apaga"],
 			el: ["apague"],
@@ -7022,7 +7022,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["aparece"],
 			el: ["aparezca"],
@@ -7150,7 +7150,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["aplaude"],
 			el: ["aplauda"],
@@ -7278,7 +7278,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["aplica"],
 			el: ["aplique"],
@@ -7406,7 +7406,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["apuesta"],
 			el: ["apueste"],
@@ -7534,7 +7534,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["apoya"],
 			el: ["apoye"],
@@ -7662,7 +7662,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["aprecia"],
 			el: ["aprecie"],
@@ -7790,7 +7790,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["aprende"],
 			el: ["aprenda"],
@@ -7918,7 +7918,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["aprieta"],
 			el: ["apriete"],
@@ -8046,7 +8046,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["aprueba"],
 			el: ["apruebe"],
@@ -8174,7 +8174,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["arregla"],
 			el: ["arregle"],
@@ -8302,7 +8302,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["arrepiéntete"],
 			el: ["arrepiéntase"],
@@ -8430,7 +8430,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["arroja"],
 			el: ["arroje"],
@@ -8558,7 +8558,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["asiste"],
 			el: ["asista"],
@@ -8686,7 +8686,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["asocia"],
 			el: ["asocie"],
@@ -8814,7 +8814,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["aspira"],
 			el: ["aspire"],
@@ -8942,7 +8942,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["asusta"],
 			el: ["asuste"],
@@ -9070,7 +9070,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["asústate"],
 			el: ["asústese"],
@@ -9198,7 +9198,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["ataca"],
 			el: ["ataque"],
@@ -9326,7 +9326,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["atiende"],
 			el: ["atienda"],
@@ -9454,7 +9454,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["atrae"],
 			el: ["atraiga"],
@@ -9582,7 +9582,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["atraviesa"],
 			el: ["atraviese"],
@@ -9710,7 +9710,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["atrévete"],
 			el: ["atrévase"],
@@ -9838,7 +9838,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["aumenta"],
 			el: ["aumente"],
@@ -9966,7 +9966,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["avanza"],
 			el: ["avance"],
@@ -10094,7 +10094,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["averigua"],
 			el: ["averigüe"],
@@ -10222,7 +10222,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["avisa"],
 			el: ["avise"],
@@ -10350,7 +10350,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["ayuda"],
 			el: ["ayude"],
@@ -10478,7 +10478,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["baila"],
 			el: ["baile"],
@@ -10606,7 +10606,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["baja"],
 			el: ["baje"],
@@ -10734,7 +10734,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["baña"],
 			el: ["bañe"],
@@ -10862,7 +10862,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["báñate"],
 			el: ["báñese"],
@@ -10990,7 +10990,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["barre"],
 			el: ["barra"],
@@ -11118,7 +11118,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["bate"],
 			el: ["bata"],
@@ -11246,7 +11246,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["bautiza"],
 			el: ["bautice"],
@@ -11374,7 +11374,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["bebe"],
 			el: ["beba"],
@@ -11502,7 +11502,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["bendice"],
 			el: ["bendiga"],
@@ -11630,7 +11630,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["besa"],
 			el: ["bese"],
@@ -11758,7 +11758,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["borda"],
 			el: ["borde"],
@@ -11886,7 +11886,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["borra"],
 			el: ["borre"],
@@ -12014,7 +12014,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["brilla"],
 			el: ["brille"],
@@ -12142,7 +12142,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["brinda"],
 			el: ["brinde"],
@@ -12270,7 +12270,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["broncéate"],
 			el: ["broncéese"],
@@ -12398,7 +12398,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["bucea"],
 			el: ["bucee"],
@@ -12526,7 +12526,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["burla"],
 			el: ["burle"],
@@ -12654,7 +12654,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["búrlate"],
 			el: ["búrlese"],
@@ -12782,7 +12782,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["busca"],
 			el: ["busque"],
@@ -12910,7 +12910,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["cabe"],
 			el: ["quepa"],
@@ -13038,7 +13038,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["cae"],
 			el: ["caiga"],
@@ -13166,7 +13166,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["calcula"],
 			el: ["calcule"],
@@ -13294,7 +13294,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["calienta"],
 			el: ["caliente"],
@@ -13422,7 +13422,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["caliéntate"],
 			el: ["caliéntese"],
@@ -13550,7 +13550,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["calla"],
 			el: ["calle"],
@@ -13678,7 +13678,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["cállate"],
 			el: ["cállese"],
@@ -13806,7 +13806,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["calma"],
 			el: ["calme"],
@@ -13934,7 +13934,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["cálmate"],
 			el: ["cálmese"],
@@ -14062,7 +14062,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["camina"],
 			el: ["camine"],
@@ -14190,7 +14190,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["cancela"],
 			el: ["cancele"],
@@ -14318,7 +14318,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["cansa"],
 			el: ["canse"],
@@ -14446,7 +14446,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["cánsate"],
 			el: ["cánsese"],
@@ -14574,7 +14574,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["caracteriza"],
 			el: ["caracterice"],
@@ -14702,7 +14702,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["carga"],
 			el: ["cargue"],
@@ -14830,7 +14830,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["casa"],
 			el: ["case"],
@@ -14958,7 +14958,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["cásate"],
 			el: ["cásese"],
@@ -15086,7 +15086,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["castiga"],
 			el: ["castigue"],
@@ -15214,7 +15214,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["causa"],
 			el: ["cause"],
@@ -15342,7 +15342,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["caza"],
 			el: ["cace"],
@@ -15470,7 +15470,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["celebra"],
 			el: ["celebre"],
@@ -15598,7 +15598,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["cena"],
 			el: ["cene"],
@@ -15726,7 +15726,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["censura"],
 			el: ["censure"],
@@ -15854,7 +15854,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["cepilla"],
 			el: ["cepille"],
@@ -15982,7 +15982,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["cierra"],
 			el: ["cierre"],
@@ -16110,7 +16110,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["cesa"],
 			el: ["cese"],
@@ -16238,7 +16238,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["charla"],
 			el: ["charle"],
@@ -16366,7 +16366,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["chismea"],
 			el: ["chismee"],
@@ -16494,7 +16494,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["choca"],
 			el: ["choque"],
@@ -16622,7 +16622,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["civiliza"],
 			el: ["civilice"],
@@ -16750,7 +16750,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["clarifica"],
 			el: ["clarifique"],
@@ -16878,7 +16878,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["clasifica"],
 			el: ["clasifique"],
@@ -17006,7 +17006,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["cobra"],
 			el: ["cobre"],
@@ -17134,7 +17134,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["cocina"],
 			el: ["cocine"],
@@ -17262,7 +17262,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["coge"],
 			el: ["coja"],
@@ -17390,7 +17390,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["cuelga"],
 			el: ["cuelgue"],
@@ -17518,7 +17518,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["coloca"],
 			el: ["coloque"],
@@ -17646,7 +17646,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["coloniza"],
 			el: ["colonice"],
@@ -17774,7 +17774,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["combate"],
 			el: ["combata"],
@@ -17902,7 +17902,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["comienza"],
 			el: ["comience"],
@@ -18030,7 +18030,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["come"],
 			el: ["coma"],
@@ -18158,7 +18158,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["comparte"],
 			el: ["comparta"],
@@ -18286,7 +18286,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["compite"],
 			el: ["compita"],
@@ -18414,7 +18414,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["compón"],
 			el: ["componga"],
@@ -18542,7 +18542,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["compra"],
 			el: ["compre"],
@@ -18670,7 +18670,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["comprende"],
 			el: ["comprenda"],
@@ -18798,7 +18798,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["comunica"],
 			el: ["comunique"],
@@ -18926,7 +18926,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["comunícate"],
 			el: ["comuníquese"],
@@ -19054,7 +19054,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["condena"],
 			el: ["condene"],
@@ -19182,7 +19182,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["conduce"],
 			el: ["conduzca"],
@@ -19310,7 +19310,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["confiesa"],
 			el: ["confiese"],
@@ -19438,7 +19438,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["confía"],
 			el: ["confíe"],
@@ -19566,7 +19566,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["confirma"],
 			el: ["confirme"],
@@ -19694,7 +19694,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["confisca"],
 			el: ["confisque"],
@@ -19822,7 +19822,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["conjuga"],
 			el: ["conjugue"],
@@ -19950,7 +19950,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["conoce"],
 			el: ["conozca"],
@@ -20078,7 +20078,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["conquista"],
 			el: ["conquiste"],
@@ -20206,7 +20206,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["consigue"],
 			el: ["consiga"],
@@ -20334,7 +20334,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["consiente"],
 			el: ["consienta"],
@@ -20462,7 +20462,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["conserva"],
 			el: ["conserve"],
@@ -20590,7 +20590,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["consiste"],
 			el: ["consista"],
@@ -20718,7 +20718,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["constituye"],
 			el: ["constituya"],
@@ -20846,7 +20846,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["construye"],
 			el: ["construya"],
@@ -20974,7 +20974,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["consume"],
 			el: ["consuma"],
@@ -21102,7 +21102,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["contamina"],
 			el: ["contamine"],
@@ -21230,7 +21230,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["cuenta"],
 			el: ["cuente"],
@@ -21358,7 +21358,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["contén"],
 			el: ["contenga"],
@@ -21486,7 +21486,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["contesta"],
 			el: ["conteste"],
@@ -21614,7 +21614,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["continúa"],
 			el: ["continúe"],
@@ -21742,7 +21742,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["contribuye"],
 			el: ["contribuya"],
@@ -21870,7 +21870,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["controla"],
 			el: ["controle"],
@@ -21998,7 +21998,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["convence"],
 			el: ["convenza"],
@@ -22126,7 +22126,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["convén"],
 			el: ["convenga"],
@@ -22254,7 +22254,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["conversa"],
 			el: ["converse"],
@@ -22382,7 +22382,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["convierte"],
 			el: ["convierta"],
@@ -22510,7 +22510,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["convida"],
 			el: ["convide"],
@@ -22638,7 +22638,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["copia"],
 			el: ["copie"],
@@ -22766,7 +22766,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["corrige"],
 			el: ["corrija"],
@@ -22894,7 +22894,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["corre"],
 			el: ["corra"],
@@ -23022,7 +23022,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["corta"],
 			el: ["corte"],
@@ -23150,7 +23150,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["cose"],
 			el: ["cosa"],
@@ -23278,7 +23278,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["cuesta"],
 			el: ["cueste"],
@@ -23406,7 +23406,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["crea"],
 			el: ["cree"],
@@ -23534,7 +23534,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["crece"],
 			el: ["crezca"],
@@ -23662,7 +23662,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["cree"],
 			el: ["crea"],
@@ -23790,7 +23790,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["cría"],
 			el: ["críe"],
@@ -23918,7 +23918,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["críate"],
 			el: ["críese"],
@@ -24046,7 +24046,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["critica"],
 			el: ["critique"],
@@ -24174,7 +24174,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["crucifica"],
 			el: ["crucifique"],
@@ -24302,7 +24302,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["cruza"],
 			el: ["cruce"],
@@ -24430,7 +24430,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["cubre"],
 			el: ["cubra"],
@@ -24558,7 +24558,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["cuida"],
 			el: ["cuide"],
@@ -24686,7 +24686,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["culpa"],
 			el: ["culpe"],
@@ -24814,7 +24814,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["cultiva"],
 			el: ["cultive"],
@@ -24942,7 +24942,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["cumple"],
 			el: ["cumpla"],
@@ -25070,7 +25070,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["cura"],
 			el: ["cure"],
@@ -25198,7 +25198,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["da"],
 			el: ["dé"],
@@ -25326,7 +25326,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["debe"],
 			el: ["deba"],
@@ -25454,7 +25454,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["decide"],
 			el: ["decida"],
@@ -25582,7 +25582,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["decídete"],
 			el: ["decídase"],
@@ -25710,7 +25710,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["di"],
 			el: ["diga"],
@@ -25838,7 +25838,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["declara"],
 			el: ["declare"],
@@ -25966,7 +25966,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["decora"],
 			el: ["decore"],
@@ -26094,7 +26094,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["dedica"],
 			el: ["dedique"],
@@ -26222,7 +26222,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["dedícate"],
 			el: ["dedíquese"],
@@ -26350,7 +26350,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["defiende"],
 			el: ["defienda"],
@@ -26478,7 +26478,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["deja"],
 			el: ["deje"],
@@ -26606,7 +26606,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["demuestra"],
 			el: ["demuestre"],
@@ -26734,7 +26734,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["depende"],
 			el: ["dependa"],
@@ -26862,7 +26862,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["deposita"],
 			el: ["deposite"],
@@ -26990,7 +26990,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["deprime"],
 			el: ["deprima"],
@@ -27118,7 +27118,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["derrite"],
 			el: ["derrita"],
@@ -27246,7 +27246,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["desagrada"],
 			el: ["desagrade"],
@@ -27374,7 +27374,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["desagradece"],
 			el: ["desagradezca"],
@@ -27502,7 +27502,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["desaparece"],
 			el: ["desaparezca"],
@@ -27630,7 +27630,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["desarrolla"],
 			el: ["desarrolle"],
@@ -27758,7 +27758,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["desarróllate"],
 			el: ["desarróllese"],
@@ -27886,7 +27886,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["desayuna"],
 			el: ["desayune"],
@@ -28014,7 +28014,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["descansa"],
 			el: ["descanse"],
@@ -28142,7 +28142,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["desciende"],
 			el: ["descienda"],
@@ -28270,7 +28270,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["describe"],
 			el: ["describa"],
@@ -28398,7 +28398,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["descubre"],
 			el: ["descubra"],
@@ -28526,7 +28526,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["desea"],
 			el: ["desee"],
@@ -28654,7 +28654,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["deshaz"],
 			el: ["deshaga"],
@@ -28782,7 +28782,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["despide"],
 			el: ["despida"],
@@ -28910,7 +28910,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["despierta"],
 			el: ["despierte"],
@@ -29038,7 +29038,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["despiértate"],
 			el: ["despiértese"],
@@ -29166,7 +29166,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["destruye"],
 			el: ["destruya"],
@@ -29294,7 +29294,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["detén"],
 			el: ["detenga"],
@@ -29422,7 +29422,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["detente"],
 			el: ["deténgase"],
@@ -29550,7 +29550,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["detesta"],
 			el: ["deteste"],
@@ -29678,7 +29678,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["devuelve"],
 			el: ["devuelva"],
@@ -29806,7 +29806,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["devora"],
 			el: ["devore"],
@@ -29934,7 +29934,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["dibuja"],
 			el: ["dibuje"],
@@ -30062,7 +30062,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["dirige"],
 			el: ["dirija"],
@@ -30190,7 +30190,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["diseña"],
 			el: ["diseñe"],
@@ -30318,7 +30318,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["disfruta"],
 			el: ["disfrute"],
@@ -30446,7 +30446,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["disgusta"],
 			el: ["disguste"],
@@ -30574,7 +30574,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["disminuye"],
 			el: ["disminuya"],
@@ -30702,7 +30702,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["distingue"],
 			el: ["distinga"],
@@ -30830,7 +30830,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["distribuye"],
 			el: ["distribuya"],
@@ -30958,7 +30958,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["divierte"],
 			el: ["divierta"],
@@ -31086,7 +31086,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["diviértete"],
 			el: ["diviértase"],
@@ -31214,7 +31214,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["divorcia"],
 			el: ["divorcie"],
@@ -31342,7 +31342,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["divórciate"],
 			el: ["divórciese"],
@@ -31470,7 +31470,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["dobla"],
 			el: ["doble"],
@@ -31598,7 +31598,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: [""],
 			el: ["duela"],
@@ -31726,7 +31726,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["duerme"],
 			el: ["duerma"],
@@ -31854,7 +31854,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["duérmete"],
 			el: ["duérmase"],
@@ -31982,7 +31982,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["ducha"],
 			el: ["duche"],
@@ -32110,7 +32110,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["dúchate"],
 			el: ["dúchese"],
@@ -32238,7 +32238,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["duda"],
 			el: ["dude"],
@@ -32366,7 +32366,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["dura"],
 			el: ["dure"],
@@ -32494,7 +32494,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["echa"],
 			el: ["eche"],
@@ -32622,7 +32622,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["échate"],
 			el: ["échese"],
@@ -32750,7 +32750,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["educa"],
 			el: ["eduque"],
@@ -32878,7 +32878,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["efectúa"],
 			el: ["efectúe"],
@@ -33006,7 +33006,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["ejerce"],
 			el: ["ejerza"],
@@ -33134,7 +33134,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["elige"],
 			el: ["elija"],
@@ -33262,7 +33262,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["elimina"],
 			el: ["elimine"],
@@ -33390,7 +33390,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["emborracha"],
 			el: ["emborrache"],
@@ -33518,7 +33518,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["emborráchate"],
 			el: ["emborráchese"],
@@ -33646,7 +33646,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["emigra"],
 			el: ["emigre"],
@@ -33774,7 +33774,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["empieza"],
 			el: ["empiece"],
@@ -33902,7 +33902,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["emplea"],
 			el: ["emplee"],
@@ -34030,7 +34030,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["enamora"],
 			el: ["enamore"],
@@ -34158,7 +34158,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["enamórate"],
 			el: ["enamórese"],
@@ -34286,7 +34286,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["encanta"],
 			el: ["encante"],
@@ -34414,7 +34414,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["enciende"],
 			el: ["encienda"],
@@ -34542,7 +34542,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["encuentra"],
 			el: ["encuentre"],
@@ -34670,7 +34670,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["enfada"],
 			el: ["enfade"],
@@ -34798,7 +34798,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["enfádate"],
 			el: ["enfádese"],
@@ -34926,7 +34926,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["enferma"],
 			el: ["enferme"],
@@ -35054,7 +35054,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["enférmate"],
 			el: ["enférmese"],
@@ -35182,7 +35182,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["enflaquece"],
 			el: ["enflaquezca"],
@@ -35310,7 +35310,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["enflaquécete"],
 			el: ["enflaquézcase"],
@@ -35438,7 +35438,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["engaña"],
 			el: ["engañe"],
@@ -35566,7 +35566,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["enoja"],
 			el: ["enoje"],
@@ -35694,7 +35694,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["enójate"],
 			el: ["enójese"],
@@ -35822,7 +35822,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["enriquece"],
 			el: ["enriquezca"],
@@ -35950,7 +35950,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["enriquécete"],
 			el: ["enriquézcase"],
@@ -36078,7 +36078,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["enseña"],
 			el: ["enseñe"],
@@ -36206,7 +36206,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["ensucia"],
 			el: ["ensucie"],
@@ -36334,7 +36334,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["entiende"],
 			el: ["entienda"],
@@ -36462,7 +36462,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["entérate"],
 			el: ["entérese"],
@@ -36590,7 +36590,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["entra"],
 			el: ["entre"],
@@ -36718,7 +36718,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["entrega"],
 			el: ["entregue"],
@@ -36846,7 +36846,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["entretén"],
 			el: ["entretenga"],
@@ -36974,7 +36974,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["entrevista"],
 			el: ["entreviste"],
@@ -37102,7 +37102,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["entusiasma"],
 			el: ["entusiasme"],
@@ -37230,7 +37230,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["entusiásmate"],
 			el: ["entusiásmese"],
@@ -37358,7 +37358,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["envejece"],
 			el: ["envejezca"],
@@ -37486,7 +37486,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["envejécete"],
 			el: ["envejézcase"],
@@ -37614,7 +37614,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["envía"],
 			el: ["envíe"],
@@ -37742,7 +37742,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["equivoca"],
 			el: ["equivoque"],
@@ -37870,7 +37870,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["equivócate"],
 			el: ["equivóquese"],
@@ -37998,7 +37998,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["yerra"],
 			el: ["yerre"],
@@ -38126,7 +38126,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["escoge"],
 			el: ["escoja"],
@@ -38254,7 +38254,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["esconde"],
 			el: ["esconda"],
@@ -38382,7 +38382,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["escóndete"],
 			el: ["escóndase"],
@@ -38510,7 +38510,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["escribe"],
 			el: ["escriba"],
@@ -38638,7 +38638,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["escucha"],
 			el: ["escuche"],
@@ -38766,7 +38766,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["espera"],
 			el: ["espere"],
@@ -38894,7 +38894,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["esquía"],
 			el: ["esquíe"],
@@ -39022,7 +39022,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["establece"],
 			el: ["establezca"],
@@ -39150,7 +39150,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["está"],
 			el: ["esté"],
@@ -39278,7 +39278,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["estima"],
 			el: ["estime"],
@@ -39406,7 +39406,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["estudia"],
 			el: ["estudie"],
@@ -39534,7 +39534,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["evacua"],
 			el: ["evacue"],
@@ -39662,7 +39662,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["evita"],
 			el: ["evite"],
@@ -39790,7 +39790,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["exhibe"],
 			el: ["exhiba"],
@@ -39918,7 +39918,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["exige"],
 			el: ["exija"],
@@ -40046,7 +40046,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["explica"],
 			el: ["explique"],
@@ -40174,7 +40174,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["explora"],
 			el: ["explore"],
@@ -40302,7 +40302,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["explota"],
 			el: ["explote"],
@@ -40430,7 +40430,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["expón"],
 			el: ["exponga"],
@@ -40558,7 +40558,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["exporta"],
 			el: ["exporte"],
@@ -40686,7 +40686,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["expresa"],
 			el: ["exprese"],
@@ -40814,7 +40814,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["extiende"],
 			el: ["extienda"],
@@ -40942,7 +40942,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["extingue"],
 			el: ["extinga"],
@@ -41070,7 +41070,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["fabrica"],
 			el: ["fabrique"],
@@ -41198,7 +41198,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["falta"],
 			el: ["falte"],
@@ -41326,7 +41326,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["fascina"],
 			el: ["fascine"],
@@ -41454,7 +41454,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["felicita"],
 			el: ["felicite"],
@@ -41582,7 +41582,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["fija"],
 			el: ["fije"],
@@ -41710,7 +41710,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["finge"],
 			el: ["finja"],
@@ -41838,7 +41838,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["firma"],
 			el: ["firme"],
@@ -41966,7 +41966,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["florece"],
 			el: ["florezca"],
@@ -42094,7 +42094,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["forma"],
 			el: ["forme"],
@@ -42222,7 +42222,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["fortalece"],
 			el: ["fortalezca"],
@@ -42350,7 +42350,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["fríe"],
 			el: ["fría"],
@@ -42478,7 +42478,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["fuma"],
 			el: ["fume"],
@@ -42606,7 +42606,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["funciona"],
 			el: ["funcione"],
@@ -42734,7 +42734,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["gana"],
 			el: ["gane"],
@@ -42862,7 +42862,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["gasta"],
 			el: ["gaste"],
@@ -42990,7 +42990,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["generaliza"],
 			el: ["generalice"],
@@ -43118,7 +43118,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["glorifica"],
 			el: ["glorifique"],
@@ -43246,7 +43246,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["gobierna"],
 			el: ["gobierne"],
@@ -43374,7 +43374,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["gradúa"],
 			el: ["gradúe"],
@@ -43502,7 +43502,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["gradúate"],
 			el: ["gradúese"],
@@ -43630,7 +43630,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["grita"],
 			el: ["grite"],
@@ -43758,7 +43758,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["gruñe"],
 			el: ["gruña"],
@@ -43886,7 +43886,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["guarda"],
 			el: ["guarde"],
@@ -44014,7 +44014,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["guía"],
 			el: ["guíe"],
@@ -44142,7 +44142,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["gusta"],
 			el: ["guste"],
@@ -44270,7 +44270,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["habla"],
 			el: ["hable"],
@@ -44398,7 +44398,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["haz"],
 			el: ["haga"],
@@ -44526,7 +44526,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["halla"],
 			el: ["halle"],
@@ -44654,7 +44654,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["hállate"],
 			el: ["hállese"],
@@ -44782,7 +44782,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["hiela"],
 			el: ["hiele"],
@@ -44910,7 +44910,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["hereda"],
 			el: ["herede"],
@@ -45038,7 +45038,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["hiere"],
 			el: ["hiera"],
@@ -45166,7 +45166,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["hierve"],
 			el: ["hierva"],
@@ -45294,7 +45294,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["huye"],
 			el: ["huya"],
@@ -45422,7 +45422,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["ilustra"],
 			el: ["ilustre"],
@@ -45550,7 +45550,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["importa"],
 			el: ["importe"],
@@ -45678,7 +45678,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["imprime"],
 			el: ["imprima"],
@@ -45806,7 +45806,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["incluye"],
 			el: ["incluya"],
@@ -45934,7 +45934,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["indica"],
 			el: ["indique"],
@@ -46062,7 +46062,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["induce"],
 			el: ["induzca"],
@@ -46190,7 +46190,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["influye"],
 			el: ["influya"],
@@ -46318,7 +46318,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["informa"],
 			el: ["informe"],
@@ -46446,7 +46446,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["inicia"],
 			el: ["inicie"],
@@ -46574,7 +46574,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["inmigra"],
 			el: ["inmigre"],
@@ -46702,7 +46702,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["insiste"],
 			el: ["insista"],
@@ -46830,7 +46830,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["instala"],
 			el: ["instale"],
@@ -46958,7 +46958,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["insulta"],
 			el: ["insulte"],
@@ -47086,7 +47086,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["intenta"],
 			el: ["intente"],
@@ -47214,7 +47214,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["interesa"],
 			el: ["interese"],
@@ -47342,7 +47342,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["interpreta"],
 			el: ["interprete"],
@@ -47470,7 +47470,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["introduce"],
 			el: ["introduzca"],
@@ -47598,7 +47598,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["invade"],
 			el: ["invada"],
@@ -47726,7 +47726,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["inventa"],
 			el: ["invente"],
@@ -47854,7 +47854,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["invierte"],
 			el: ["invierta"],
@@ -47982,7 +47982,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["investiga"],
 			el: ["investigue"],
@@ -48110,7 +48110,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["invita"],
 			el: ["invite"],
@@ -48238,7 +48238,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["invoca"],
 			el: ["invoque"],
@@ -48366,7 +48366,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["ve"],
 			el: ["vaya"],
@@ -48494,7 +48494,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["vete"],
 			el: ["váyase"],
@@ -48622,7 +48622,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["jáctate"],
 			el: ["jáctese"],
@@ -48750,7 +48750,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["juega"],
 			el: ["juegue"],
@@ -48878,7 +48878,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["junta"],
 			el: ["junte"],
@@ -49006,7 +49006,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["júntate"],
 			el: ["júntese"],
@@ -49134,7 +49134,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["jura"],
 			el: ["jure"],
@@ -49262,7 +49262,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["ladra"],
 			el: ["ladre"],
@@ -49390,7 +49390,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["lamenta"],
 			el: ["lamente"],
@@ -49518,7 +49518,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["lanza"],
 			el: ["lance"],
@@ -49646,7 +49646,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["lastima"],
 			el: ["lastime"],
@@ -49774,7 +49774,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["lava"],
 			el: ["lave"],
@@ -49902,7 +49902,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["lávate"],
 			el: ["lávese"],
@@ -50030,7 +50030,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["lee"],
 			el: ["lea"],
@@ -50158,7 +50158,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["legaliza"],
 			el: ["legalice"],
@@ -50286,7 +50286,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["levanta"],
 			el: ["levante"],
@@ -50414,7 +50414,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["levántate"],
 			el: ["levántese"],
@@ -50542,7 +50542,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["limpia"],
 			el: ["limpie"],
@@ -50670,7 +50670,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["llama"],
 			el: ["llame"],
@@ -50798,7 +50798,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["llámate"],
 			el: ["llámese"],
@@ -50926,7 +50926,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["llega"],
 			el: ["llegue"],
@@ -51054,7 +51054,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["llena"],
 			el: ["llene"],
@@ -51182,7 +51182,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["lleva"],
 			el: ["lleve"],
@@ -51310,7 +51310,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["llora"],
 			el: ["llore"],
@@ -51438,7 +51438,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: [""],
 			el: ["llueva"],
@@ -51566,7 +51566,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["logra"],
 			el: ["logre"],
@@ -51694,7 +51694,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["lucha"],
 			el: ["luche"],
@@ -51822,7 +51822,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["madura"],
 			el: ["madure"],
@@ -51950,7 +51950,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["manda"],
 			el: ["mande"],
@@ -52078,7 +52078,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["maneja"],
 			el: ["maneje"],
@@ -52206,7 +52206,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["mantén"],
 			el: ["mantenga"],
@@ -52334,7 +52334,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["maquilla"],
 			el: ["maquille"],
@@ -52462,7 +52462,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["te maquíllate"],
 			el: ["te maquíllese"],
@@ -52590,7 +52590,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["marca"],
 			el: ["marque"],
@@ -52718,7 +52718,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["mastica"],
 			el: ["mastique"],
@@ -52846,7 +52846,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["mata"],
 			el: ["mate"],
@@ -52974,7 +52974,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["matricula"],
 			el: ["matricule"],
@@ -53102,7 +53102,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["matricúlate"],
 			el: ["matricúlese"],
@@ -53230,7 +53230,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["mide"],
 			el: ["mida"],
@@ -53358,7 +53358,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["miente"],
 			el: ["mienta"],
@@ -53486,7 +53486,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["merece"],
 			el: ["merezca"],
@@ -53614,7 +53614,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["merienda"],
 			el: ["meriende"],
@@ -53742,7 +53742,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["mete"],
 			el: ["meta"],
@@ -53870,7 +53870,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["mezcla"],
 			el: ["mezcle"],
@@ -53998,7 +53998,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["mira"],
 			el: ["mire"],
@@ -54126,7 +54126,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["modifica"],
 			el: ["modifique"],
@@ -54254,7 +54254,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["molesta"],
 			el: ["moleste"],
@@ -54382,7 +54382,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["monta"],
 			el: ["monte"],
@@ -54510,7 +54510,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["muere"],
 			el: ["muera"],
@@ -54638,7 +54638,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["muestra"],
 			el: ["muestre"],
@@ -54766,7 +54766,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["mueve"],
 			el: ["mueva"],
@@ -54894,7 +54894,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["muévete"],
 			el: ["muévase"],
@@ -55030,7 +55030,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["múdate"],
 			el: ["múdese"],
@@ -55158,7 +55158,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["nace"],
 			el: ["nazca"],
@@ -55286,7 +55286,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["nada"],
 			el: ["nade"],
@@ -55414,7 +55414,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["navega"],
 			el: ["navegue"],
@@ -55542,7 +55542,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["necesita"],
 			el: ["necesite"],
@@ -55670,7 +55670,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["niega"],
 			el: ["niegue"],
@@ -55798,7 +55798,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["niégate"],
 			el: ["niéguese"],
@@ -55926,7 +55926,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["negocia"],
 			el: ["negocie"],
@@ -56054,7 +56054,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["nieva"],
 			el: ["nieve"],
@@ -56182,7 +56182,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["nota"],
 			el: ["note"],
@@ -56310,7 +56310,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["obedece"],
 			el: ["obedezca"],
@@ -56438,7 +56438,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["obliga"],
 			el: ["obligue"],
@@ -56566,7 +56566,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["obtén"],
 			el: ["obtenga"],
@@ -56694,7 +56694,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: [""],
 			el: ["ocurra"],
@@ -56822,7 +56822,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["odia"],
 			el: ["odie"],
@@ -56950,7 +56950,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["ofende"],
 			el: ["ofenda"],
@@ -57078,7 +57078,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["ofrece"],
 			el: ["ofrezca"],
@@ -57206,7 +57206,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["oye"],
 			el: ["oiga"],
@@ -57334,7 +57334,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["huele"],
 			el: ["huela"],
@@ -57462,7 +57462,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["olvida"],
 			el: ["olvide"],
@@ -57590,7 +57590,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["olvídate"],
 			el: ["olvídese"],
@@ -57718,7 +57718,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["opón"],
 			el: ["oponga"],
@@ -57846,7 +57846,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["oponte"],
 			el: ["opóngase"],
@@ -57974,7 +57974,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["organiza"],
 			el: ["organice"],
@@ -58102,7 +58102,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["padece"],
 			el: ["padezca"],
@@ -58230,7 +58230,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["paga"],
 			el: ["pague"],
@@ -58358,7 +58358,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["para"],
 			el: ["pare"],
@@ -58486,7 +58486,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["parece"],
 			el: ["parezca"],
@@ -58614,7 +58614,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["participa"],
 			el: ["participe"],
@@ -58742,7 +58742,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["pasa"],
 			el: ["pase"],
@@ -58870,7 +58870,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["patina"],
 			el: ["patine"],
@@ -58998,7 +58998,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["pide"],
 			el: ["pida"],
@@ -59126,7 +59126,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["pega"],
 			el: ["pegue"],
@@ -59254,7 +59254,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["peina"],
 			el: ["peine"],
@@ -59382,7 +59382,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["péinate"],
 			el: ["péinese"],
@@ -59510,7 +59510,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["pelea"],
 			el: ["pelee"],
@@ -59638,7 +59638,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["piensa"],
 			el: ["piense"],
@@ -59766,7 +59766,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["pierde"],
 			el: ["pierda"],
@@ -59894,7 +59894,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["perdona"],
 			el: ["perdone"],
@@ -60022,7 +60022,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["permanece"],
 			el: ["permanezca"],
@@ -60150,7 +60150,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["permite"],
 			el: ["permita"],
@@ -60278,7 +60278,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["persigue"],
 			el: ["persiga"],
@@ -60406,7 +60406,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["pertenece"],
 			el: ["pertenezca"],
@@ -60534,7 +60534,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["pesa"],
 			el: ["pese"],
@@ -60662,7 +60662,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["pesca"],
 			el: ["pesque"],
@@ -60790,7 +60790,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["pica"],
 			el: ["pique"],
@@ -60918,7 +60918,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["pinta"],
 			el: ["pinte"],
@@ -61046,7 +61046,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["plancha"],
 			el: ["planche"],
@@ -61174,7 +61174,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["planta"],
 			el: ["plante"],
@@ -61302,7 +61302,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["platica"],
 			el: ["platique"],
@@ -61430,7 +61430,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["puede"],
 			el: ["pueda"],
@@ -61558,7 +61558,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["pon"],
 			el: ["ponga"],
@@ -61686,7 +61686,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["ponte"],
 			el: ["póngase"],
@@ -61814,7 +61814,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["practica"],
 			el: ["practique"],
@@ -61942,7 +61942,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["predice"],
 			el: ["prediga"],
@@ -62070,7 +62070,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["prefiere"],
 			el: ["prefiera"],
@@ -62198,7 +62198,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["pregunta"],
 			el: ["pregunte"],
@@ -62326,7 +62326,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["pregúntate"],
 			el: ["pregúntese"],
@@ -62454,7 +62454,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["prepara"],
 			el: ["prepare"],
@@ -62582,7 +62582,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["prepárate"],
 			el: ["prepárese"],
@@ -62710,7 +62710,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["presenta"],
 			el: ["presente"],
@@ -62838,7 +62838,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["presiente"],
 			el: ["presienta"],
@@ -62966,7 +62966,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["preserva"],
 			el: ["preserve"],
@@ -63094,7 +63094,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["prevé"],
 			el: ["prevea"],
@@ -63222,7 +63222,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["prueba"],
 			el: ["pruebe"],
@@ -63350,7 +63350,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["produce"],
 			el: ["produzca"],
@@ -63478,7 +63478,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["prohíbe"],
 			el: ["prohíba"],
@@ -63606,7 +63606,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["promete"],
 			el: ["prometa"],
@@ -63734,7 +63734,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["propón"],
 			el: ["proponga"],
@@ -63862,7 +63862,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["prosigue"],
 			el: ["prosiga"],
@@ -63990,7 +63990,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["protege"],
 			el: ["proteja"],
@@ -64118,7 +64118,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["protesta"],
 			el: ["proteste"],
@@ -64246,7 +64246,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["provoca"],
 			el: ["provoque"],
@@ -64374,7 +64374,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["publica"],
 			el: ["publique"],
@@ -64502,7 +64502,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["purifica"],
 			el: ["purifique"],
@@ -64630,7 +64630,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["quiebra"],
 			el: ["quiebre"],
@@ -64758,7 +64758,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["quiébrate"],
 			el: ["quiébrese"],
@@ -64886,7 +64886,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["queda"],
 			el: ["quede"],
@@ -65014,7 +65014,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["quédate"],
 			el: ["quédese"],
@@ -65142,7 +65142,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["quéjate"],
 			el: ["quéjese"],
@@ -65270,7 +65270,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["quema"],
 			el: ["queme"],
@@ -65398,7 +65398,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["quémate"],
 			el: ["quémese"],
@@ -65526,7 +65526,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["quiere"],
 			el: ["quiera"],
@@ -65654,7 +65654,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["realiza"],
 			el: ["realice"],
@@ -65782,7 +65782,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["rechaza"],
 			el: ["rechace"],
@@ -65910,7 +65910,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["recibe"],
 			el: ["reciba"],
@@ -66038,7 +66038,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["recicla"],
 			el: ["recicle"],
@@ -66166,7 +66166,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["recoge"],
 			el: ["recoja"],
@@ -66294,7 +66294,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["recomienda"],
 			el: ["recomiende"],
@@ -66422,7 +66422,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["reconoce"],
 			el: ["reconozca"],
@@ -66550,7 +66550,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["recuerda"],
 			el: ["recuerde"],
@@ -66678,7 +66678,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["reduce"],
 			el: ["reduzca"],
@@ -66806,7 +66806,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["regala"],
 			el: ["regale"],
@@ -66934,7 +66934,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["riega"],
 			el: ["riegue"],
@@ -67062,7 +67062,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["regatea"],
 			el: ["regatee"],
@@ -67190,7 +67190,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["rige"],
 			el: ["rija"],
@@ -67318,7 +67318,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["registra"],
 			el: ["registre"],
@@ -67446,7 +67446,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["regístrate"],
 			el: ["regístrese"],
@@ -67574,7 +67574,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["regresa"],
 			el: ["regrese"],
@@ -67702,7 +67702,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["regula"],
 			el: ["regule"],
@@ -67830,7 +67830,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["rehúsa"],
 			el: ["rehúse"],
@@ -67958,7 +67958,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["reina"],
 			el: ["reine"],
@@ -68086,7 +68086,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["ríe"],
 			el: ["ría"],
@@ -68214,7 +68214,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["renace"],
 			el: ["renazca"],
@@ -68342,7 +68342,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["riñe"],
 			el: ["riña"],
@@ -68470,7 +68470,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["renueva"],
 			el: ["renueve"],
@@ -68598,7 +68598,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["renuncia"],
 			el: ["renuncie"],
@@ -68726,7 +68726,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["repara"],
 			el: ["repare"],
@@ -68854,7 +68854,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["repasa"],
 			el: ["repase"],
@@ -68982,7 +68982,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["repite"],
 			el: ["repita"],
@@ -69110,7 +69110,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["replica"],
 			el: ["replique"],
@@ -69238,7 +69238,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["reporta"],
 			el: ["reporte"],
@@ -69366,7 +69366,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["requiere"],
 			el: ["requiera"],
@@ -69494,7 +69494,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["reserva"],
 			el: ["reserve"],
@@ -69622,7 +69622,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["resuelve"],
 			el: ["resuelva"],
@@ -69750,7 +69750,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["respeta"],
 			el: ["respete"],
@@ -69878,7 +69878,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["respira"],
 			el: ["respire"],
@@ -70006,7 +70006,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["responde"],
 			el: ["responda"],
@@ -70134,7 +70134,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["resulta"],
 			el: ["resulte"],
@@ -70262,7 +70262,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["revela"],
 			el: ["revele"],
@@ -70390,7 +70390,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["reza"],
 			el: ["rece"],
@@ -70518,7 +70518,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["roba"],
 			el: ["robe"],
@@ -70646,7 +70646,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["ruega"],
 			el: ["ruegue"],
@@ -70774,7 +70774,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["rompe"],
 			el: ["rompa"],
@@ -70902,7 +70902,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["sabe"],
 			el: ["sepa"],
@@ -71030,7 +71030,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["saca"],
 			el: ["saque"],
@@ -71158,7 +71158,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["sacrifica"],
 			el: ["sacrifique"],
@@ -71286,7 +71286,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["sacude"],
 			el: ["sacuda"],
@@ -71414,7 +71414,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["sal"],
 			el: ["salga"],
@@ -71542,7 +71542,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["salta"],
 			el: ["salte"],
@@ -71670,7 +71670,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["saluda"],
 			el: ["salude"],
@@ -71798,7 +71798,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["salva"],
 			el: ["salve"],
@@ -71926,7 +71926,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["satiriza"],
 			el: ["satirice"],
@@ -72054,7 +72054,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["satisfaz"],
 			el: ["satisfaga"],
@@ -72182,7 +72182,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["seca"],
 			el: ["seque"],
@@ -72310,7 +72310,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["equivócate"],
 			el: ["equivóquese"],
@@ -72438,7 +72438,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["sigue"],
 			el: ["siga"],
@@ -72566,7 +72566,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["señala"],
 			el: ["señale"],
@@ -72694,7 +72694,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["sienta"],
 			el: ["siente"],
@@ -72822,7 +72822,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["siéntate"],
 			el: ["siéntese"],
@@ -72950,7 +72950,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["siente"],
 			el: ["sienta"],
@@ -73078,7 +73078,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["siéntete"],
 			el: ["siéntase"],
@@ -73206,7 +73206,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["sé"],
 			el: ["sea"],
@@ -73334,7 +73334,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["sirve"],
 			el: ["sirva"],
@@ -73462,7 +73462,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["significa"],
 			el: ["signifique"],
@@ -73590,7 +73590,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["simboliza"],
 			el: ["simbolice"],
@@ -73718,7 +73718,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["sitúa"],
 			el: ["sitúe"],
@@ -73846,7 +73846,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["sobrevive"],
 			el: ["sobreviva"],
@@ -73974,7 +73974,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["suele"],
 			el: ["suela"],
@@ -74102,7 +74102,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["suena"],
 			el: ["suene"],
@@ -74230,7 +74230,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["sueña"],
 			el: ["sueñe"],
@@ -74358,7 +74358,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["sonríe"],
 			el: ["sonría"],
@@ -74486,7 +74486,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["soporta"],
 			el: ["soporte"],
@@ -74614,7 +74614,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["sorprende"],
 			el: ["sorprenda"],
@@ -74742,7 +74742,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["sube"],
 			el: ["suba"],
@@ -74870,7 +74870,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["sucede"],
 			el: ["suceda"],
@@ -74998,7 +74998,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["sufre"],
 			el: ["sufra"],
@@ -75126,7 +75126,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["sugiere"],
 			el: ["sugiera"],
@@ -75254,7 +75254,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["supón"],
 			el: ["suponga"],
@@ -75382,7 +75382,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["surge"],
 			el: ["surja"],
@@ -75510,7 +75510,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["suspira"],
 			el: ["suspire"],
@@ -75638,7 +75638,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["sustituye"],
 			el: ["sustituya"],
@@ -75766,7 +75766,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["tañe"],
 			el: ["taña"],
@@ -75894,7 +75894,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["tapa"],
 			el: ["tape"],
@@ -76022,7 +76022,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["tarda"],
 			el: ["tarde"],
@@ -76150,7 +76150,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["teme"],
 			el: ["tema"],
@@ -76278,7 +76278,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["ten"],
 			el: ["tenga"],
@@ -76406,7 +76406,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["tiñe"],
 			el: ["tiña"],
@@ -76534,7 +76534,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["termina"],
 			el: ["termine"],
@@ -76662,7 +76662,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["tira"],
 			el: ["tire"],
@@ -76790,7 +76790,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["toca"],
 			el: ["toque"],
@@ -76918,7 +76918,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["toma"],
 			el: ["tome"],
@@ -77046,7 +77046,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["tuerce"],
 			el: ["tuerza"],
@@ -77174,7 +77174,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["tose"],
 			el: ["tosa"],
@@ -77302,7 +77302,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["trabaja"],
 			el: ["trabaje"],
@@ -77430,7 +77430,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["traduce"],
 			el: ["traduzca"],
@@ -77558,7 +77558,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["trae"],
 			el: ["traiga"],
@@ -77686,7 +77686,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["traga"],
 			el: ["trague"],
@@ -77814,7 +77814,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["trata"],
 			el: ["trate"],
@@ -77942,7 +77942,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["triunfa"],
 			el: ["triunfe"],
@@ -78070,7 +78070,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["tropieza"],
 			el: ["tropiece"],
@@ -78198,7 +78198,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["ubica"],
 			el: ["ubique"],
@@ -78326,7 +78326,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["une"],
 			el: ["una"],
@@ -78454,7 +78454,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["unta"],
 			el: ["unte"],
@@ -78582,7 +78582,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["usa"],
 			el: ["use"],
@@ -78710,7 +78710,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["utiliza"],
 			el: ["utilice"],
@@ -78838,7 +78838,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["vacía"],
 			el: ["vacíe"],
@@ -78966,7 +78966,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["vale"],
 			el: ["valga"],
@@ -79094,7 +79094,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["varía"],
 			el: ["varíe"],
@@ -79222,7 +79222,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["vence"],
 			el: ["venza"],
@@ -79350,7 +79350,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["vende"],
 			el: ["venda"],
@@ -79478,7 +79478,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["ven"],
 			el: ["venga"],
@@ -79606,7 +79606,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["ve"],
 			el: ["vea"],
@@ -79734,7 +79734,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["verifica"],
 			el: ["verifique"],
@@ -79862,7 +79862,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["viste"],
 			el: ["vista"],
@@ -79990,7 +79990,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["vístete"],
 			el: ["vístase"],
@@ -80118,7 +80118,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["viaja"],
 			el: ["viaje"],
@@ -80246,7 +80246,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["viola"],
 			el: ["viole"],
@@ -80374,7 +80374,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["visita"],
 			el: ["visite"],
@@ -80502,7 +80502,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["vive"],
 			el: ["viva"],
@@ -80630,7 +80630,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["vuela"],
 			el: ["vuele"],
@@ -80758,7 +80758,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["vuelve"],
 			el: ["vuelva"],
@@ -80886,7 +80886,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["vomita"],
 			el: ["vomite"],
@@ -81014,7 +81014,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["vota"],
 			el: ["vote"],
@@ -81142,7 +81142,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["yace"],
 			el: ["yazca"],
@@ -81270,7 +81270,7 @@ const VERB_DATA = [
 			vosotros: [""],
 			ellos: [""],
 		},
-		"imperative-negative": {
+		"imperative-affirmative": {
 			yo: [""],
 			tu: ["zambúllete"],
 			el: ["zambúllase"],
