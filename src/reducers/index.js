@@ -151,6 +151,7 @@ const initialState = {
 	targetScore: 10,
 	currentlyPlaying: false,
 	currentQuestion: {
+		questionNumber: '',
 		englishVerb: '',
 		spanishVerb: '',
 		pronoun: '',
@@ -206,9 +207,33 @@ const rootReducer = (state = initialState, action) => {
 					userDefinedVerbs: action.verbsString,
 				},
 			};
-		case actionTypes.SET_USER_ANSWER:
+		case actionTypes.SET_SCORE:
 			return {
-				...state, userAnswer: action.answer
+				...state,
+				score: action.score,
+			};
+		case actionTypes.SET_TARGET_SCORE:
+			return {
+				...state,
+				targetScore: action.score,
+			};
+		case actionTypes.TOGGLE_CURRENTLY_PLAYING:
+			return {
+				...state,
+				currentlyPlaying: !state.currentlyPlaying,
+			};
+		case actionTypes.SET_CURRENT_QUESTION:
+			return {
+				...state,
+				currentQuestion: {
+					questionNumber: action.questionNumber,
+					englishVerb: action.verb.infinitive_english,
+					spanishVerb: action.verb.infinitive,
+					pronoun: action.pronoun,
+					tense: action.tense,
+					conjugation: '',
+					answers: action.verb['conjugations'][action.tense][action.pronoun],
+				},
 			};
 		default:
 			return state;
