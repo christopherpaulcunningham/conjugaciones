@@ -7,8 +7,12 @@ export const actionTypes = {
 	SET_REFLEXIVE: 'SET_REFLEXIVE',
 	SET_SELECTED_VERBS: 'SET_SELECTED_VERBS',
 	SET_USER_DEFINED_VERBS: 'SET_USER_DEFINED_VERBS',
-	GENERATE_QUESTION: 'GENERATE_QUESTION',
+	SET_SCORE: 'SET_SCORE',
+	SET_TARGET_SCORE: 'SET_TARGET_SCORE',
+	TOGGLE_CURRENTLY_PLAYING: 'TOGGLE_CURRENTLY_PLAYING',
+	SET_CURRENT_QUESTION: 'SET_CURRENT_QUESTION',
 	SET_USER_ANSWER: 'SET_USER_ANSWER',
+	GENERATE_QUESTION: 'GENERATE_QUESTION',
 };
 
 export const verbOptions = {
@@ -44,8 +48,24 @@ export function setUserDefinedVerbs(verbsString) {
 	return { type: actionTypes.SET_USER_DEFINED_VERBS, verbsString };
 }
 
+export function setScore(score) {
+	return { type: actionTypes.SET_SCORE, score };
+}
+
+export function setTargetScore(score) {
+	return { type: actionTypes.SET_TARGET_SCORE, score };
+}
+
 export function setUserAnswer(answer) {
 	return { type: actionTypes.SET_USER_ANSWER, answer };
+}
+
+export function toggleCurrentlyPlaying() {
+	return { type: actionTypes.TOGGLE_CURRENTLY_PLAYING };
+}
+
+export function setCurrentQuestion(questionNumber, verb, tense, pronoun, answer ) {
+	return { type: actionTypes.SET_CURRENT_QUESTION, questionNumber, verb, tense, pronoun, answer };
 }
 
 export function generateQuestion(tenses, pronouns, verbSettings) {
@@ -59,8 +79,6 @@ export function generateQuestion(tenses, pronouns, verbSettings) {
 	// Select a random pronoun from those chosen.
 	const selectedPronouns = pronouns.filter(pronoun => pronoun.selected);
 	const randomPronoun = selectedPronouns[Math.floor(Math.random() * selectedPronouns.length)];
-
-	let test = randomVerb['conjugations'][randomTense.tense][randomPronoun.pronoun];
 
 	const generatedQuestion = {
 		verb: randomVerb,
