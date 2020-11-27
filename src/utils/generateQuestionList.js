@@ -7,7 +7,7 @@ export default function generateQuestionList(tenses, pronouns, verbSettings, tar
 	
 	// Select a list random verbs.
 	const randomVerbList = generateVerbList(VERB_DATA, verbSettings, targetScore);
-	const randomVerb = generateVerb(VERB_DATA, verbSettings);
+	
 	
 	// For each verb in the list, select a random tense and pronoun.
 	randomVerbList.map(verb => {
@@ -51,5 +51,7 @@ function generateVerbList(verbArray, verbSettings, targetScore){
 
 	// Shuffle the array of verbs and return a list of questions.
 	verbsInPlay = shuffleArray(verbsInPlay);
+
+	
 	return verbsInPlay.slice(0, targetScore);
 }
