@@ -125,12 +125,12 @@ const initialState = {
 			selected: true,
 		},
 		{
-			pronoun: 'nos',
+			pronoun: 'nosotros',
 			name: 'Nosotros',
 			selected: true,
 		},
 		{
-			pronoun: 'vos',
+			pronoun: 'vosotros',
 			name: 'Vosotros',
 			selected: true,
 		},
@@ -204,7 +204,8 @@ const rootReducer = (state = initialState, action) => {
 				...state,
 				verbSettings: {
 					...state.verbSettings,
-					userDefinedVerbs: action.verbsString,
+					userDefinedVerbs: action.verbString,
+					validUserDefinedVerbs: action.validVerbs
 				},
 			};
 		case actionTypes.SET_SCORE:
@@ -234,6 +235,11 @@ const rootReducer = (state = initialState, action) => {
 					conjugation: '',
 					answers: action.verb['conjugations'][action.tense][action.pronoun],
 				},
+			};
+		case actionTypes.SET_USER_ANSWER:
+			return {
+				...state,
+				userAnswer: action.answer,
 			};
 		default:
 			return state;
