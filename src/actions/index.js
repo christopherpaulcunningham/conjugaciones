@@ -43,9 +43,9 @@ export function setSelectedVerbs(option) {
 	return { type: actionTypes.SET_SELECTED_VERBS, option };
 }
 
-export function setUserDefinedVerbs(verbsString) {
-	// TODO: CHECK IF THE VERBS DEFINED BY THE USER ARE VALID. IF SO, ADD TO VALID VERBS ARRAY.
-	return { type: actionTypes.SET_USER_DEFINED_VERBS, verbsString };
+export function setUserDefinedVerbs(verbString) {
+	const validVerbs = VERB_DATA.filter((verbs) => verbString.toLowerCase().replace(/ /g, '').split(',').includes(verbs.infinitive.toLowerCase()));
+	return { type: actionTypes.SET_USER_DEFINED_VERBS, verbString, validVerbs };
 }
 
 export function setScore(score) {
@@ -66,60 +66,4 @@ export function toggleCurrentlyPlaying() {
 
 export function setCurrentQuestion(questionNumber, verb, tense, pronoun, answer ) {
 	return { type: actionTypes.SET_CURRENT_QUESTION, questionNumber, verb, tense, pronoun, answer };
-}
-
-export function generateQuestion(tenses, pronouns, verbSettings) {
-	// Select a random verb.
-	const randomVerb = generateVerb(VERB_DATA, verbSettings);
-
-	// Select a random tense from those chosen.
-	const selectedTenses = tenses.filter(tense => tense.selected);
-	const randomTense = selectedTenses[Math.floor(Math.random() * selectedTenses.length)];
-
-	// Select a random pronoun from those chosen.
-	const selectedPronouns = pronouns.filter(pronoun => pronoun.selected);
-	const randomPronoun = selectedPronouns[Math.floor(Math.random() * selectedPronouns.length)];
-
-	const generatedQuestion = {
-		verb: randomVerb,
-		tense: randomTense.tense,
-		pronoun: randomPronoun.pronoun
-	}
-
-	return generatedQuestion;
-}
-
-function generateVerb(verbArray, verbSettings) {
-	// An array to hold the verbs which match the user's settings.
-	let verbsInPlay = [];
-
-	// Check the verb options which have been selected.
-	if (verbSettings.selectedVerbs !== verbOptions.USER_DEFINED) {
-		verbsInPlay = verbArray.filter(
-			(verb) =>
-				(verbSettings.irregularVerbs === verbOptions.INCLUDE ||
-					(verbSettings.irregularVerbs === verbOptions.EXCLUDE &&
-						!verb.irregular)) &&
-				(verbSettings.reflexiveVerbs === verbOptions.INCLUDE ||
-					(verbSettings.reflexiveVerbs === verbOptions.EXCLUDE &&
-						!verb.reflexive)) &&
-				(verbSettings.selectedVerbs === verbOptions.ALL ||
-					(verbSettings.selectedVerbs === verbOptions.COMMON && verb.common))
-		);
-	} else {
-		// TODO: The user has selected to use custom verbs.
-	}
-
-	// Shuffle the array of verbs and return a random verb.
-	return shuffleArray(verbsInPlay)[Math.floor(Math.random() * verbsInPlay.length)];
-}
-
-// A method to shuffle the array using Richard Durstenfeld's algorithm. This method picks a random element
-// for each original array element, and excludes it from the next draw.
-function shuffleArray(array) {
-	for (let i = array.length - 1; i > 0; i--) {
-		const j = Math.floor(Math.random() * (i + 1));
-		[array[i], array[j]] = [array[j], array[i]];
-	}
-	return array;
 }
