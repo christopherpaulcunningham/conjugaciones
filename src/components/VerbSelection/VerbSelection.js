@@ -6,6 +6,7 @@ import "./VerbSelection.css";
 
 export default function VerbSelection() {
 	const tenses = useSelector((state) => state.tenses);
+	const errors = useSelector((state) => state.errors);	
 	const dispatch = useDispatch();
 
 	return (
@@ -13,9 +14,7 @@ export default function VerbSelection() {
 			<div className="column-header">Tenses and Moods</div>
 			<p className="help-text">(Hover over the tense for more information)</p>
 			<div className="validation-message">
-			{tenses.every((tense) => !tense.selected) && (
-				<span>* Select at least one tense.</span>
-			)}
+				<span>{errors['tenses']}</span>
 			</div>
 			<div className="options-section-left">
 				<span className="section-header">Indicative</span>
