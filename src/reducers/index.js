@@ -161,6 +161,7 @@ const initialState = {
 		answers: [], //In some cases, there can be multiple correct answers.
 	},
 	userAnswer: '',
+	errors: [],
 };
 
 const rootReducer = (state = initialState, action) => {
@@ -206,7 +207,7 @@ const rootReducer = (state = initialState, action) => {
 				verbSettings: {
 					...state.verbSettings,
 					userDefinedVerbs: action.verbString,
-					validUserDefinedVerbs: action.validVerbs
+					validUserDefinedVerbs: action.validVerbs,
 				},
 			};
 		case actionTypes.SET_SCORE:
@@ -246,6 +247,11 @@ const rootReducer = (state = initialState, action) => {
 			return {
 				...state,
 				userAnswer: action.answer,
+			};
+		case actionTypes.SET_ERRORS:
+			return {
+				...state,
+				errors: action.errors,
 			};
 		default:
 			return state;

@@ -13,6 +13,7 @@ export const actionTypes = {
 	SET_QUESTION_LIST: 'SET_QUESTION_LIST',
 	SET_CURRENT_QUESTION: 'SET_CURRENT_QUESTION',
 	SET_USER_ANSWER: 'SET_USER_ANSWER',
+	SET_ERRORS: 'SET_ERRORS'
 };
 
 export const verbOptions = {
@@ -70,4 +71,8 @@ export function setQuestionList(list) {
 
 export function setCurrentQuestion(questionNumber, verb, tense, pronoun, answer ) {
 	return { type: actionTypes.SET_CURRENT_QUESTION, questionNumber, verb, tense, pronoun, answer };
+}
+
+export function setErrors(errors) {
+	return { type: actionTypes.SET_ERRORS, errors}
 }
