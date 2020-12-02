@@ -1,29 +1,29 @@
-import React from 'react';
+import React from 'react';	
 import { useSelector, useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 import {
 	setScore,
 	setUserAnswer,
 	toggleCurrentlyPlaying,
 	setCurrentQuestion,
+	setErrors,
 } from '../../actions';
-import generateQuestion from "../../utils/generateQuestion"
 import './Game.css';
 
 export default function Game() {
-	const tenses = useSelector((state) => state.tenses);
-	const pronouns = useSelector((state) => state.pronouns);
-	const verbSettings = useSelector((state) => state.verbSettings);
+	const questionList = useSelector((state) => state.questionList);
 	const currentQuestion = useSelector((state) => state.currentQuestion);
 	const targetScore = useSelector((state) => state.targetScore);
 	const currentScore = useSelector((state) => state.score);
 	const userAnswer = useSelector((state) => state.userAnswer);
+	const errors = useSelector((state) => state.errors);
 	const dispatch = useDispatch();
+	const history = useHistory();
 
 	// An array of characters with accents that will be used with buttons on the form.
 	const specialCharacters = ['á', 'é', 'í', 'ó', 'ú', 'ñ'];
 
-	const specialCharacterClick = (evt) => {
+	function specialCharacterClick(evt) {
 		// Add the special character to the user's answer. Check first if the answer field is empty.
 		// If empty, set the character as the answer, otherwise append it to the current answer input.
 		dispatch(
@@ -36,35 +36,34 @@ export default function Game() {
 	};
 
 	function submitAnswer() {
-		// Check if the answer is correct.
-		console.log(userAnswer);
-		if (currentQuestion.answers.includes(userAnswer)) {
-			// TODO: The answer is correct. Give feedback to the user.
-			
-
-			// Check if this is the last question.
-			if (currentQuestion.questionNumber === targetScore) {
-				// TODO: The game is finished, so review performance.
-                
-                
-			} else {
-                // Increase the score and generate a new question.
-                setTimeout(() => {                     
-                    dispatch(setScore(currentScore + 1));
-                    generateNextQuestion();
-                 }, 3000);
-
+		// Check that the user has provided an answer.
+		if(validateForm()){
+			// Check if the answer is correct.
+			if (currentQuestion.answers.includes(userAnswer)) {
+				// TODO: The answer is correct. Give feedback to the user.
 				
+
+				// Check if this is the last question.
+				if (currentQuestion.questionNumber === targetScore) {
+					dispatch(toggleCurrentlyPlaying());
+					history.push("/feedback");
+					
+				} else {
+					// Increase the score and generate a new question.
+					dispatch(setScore(currentScore + 1));
+					generateNextQuestion();
+				}
+			} else {
+				// TODO: The answer is incorrect. Give feedback to the user.
+				
+				generateNextQuestion();
 			}
-		} else {
-			// TODO: The answer is incorrect. Give feedback to the user.
-			
-            
-		}
+		}		
 	}
 
 	function generateNextQuestion() {
-		const nextQuestion = generateQuestion(tenses, pronouns, verbSettings);
+		// Get the next question from the list.		
+		const nextQuestion = questionList[currentQuestion.questionNumber];
 		const questionNumber = currentQuestion.questionNumber + 1;
 		dispatch(
 			setCurrentQuestion(
@@ -81,10 +80,31 @@ export default function Game() {
 		document.getElementById('answer-input').focus();
 	}
 
+	function handleBackClick() {
+		// The user has chosen to go back to the settings page. End the game and redirect.
+		dispatch(toggleCurrentlyPlaying());
+		history.push('/');
+	}
+
+	const validateForm = () => {
+		let formErrors = {};
+		let formIsValid = true;
+
+		console.log(userAnswer);
+
+		if(userAnswer === ''){
+			formIsValid = false;
+			formErrors['answer-input'] = 'Please enter an answer.';
+		}
+
+		dispatch(setErrors(formErrors));
+		return formIsValid;
+	}
+
 	return (
 		<div className="game-container">
 			<div className="nav-button">
-				<Link to="/"> Back </Link>
+				<button onClick={handleBackClick}> Back </button>
 			</div>
 			<div className="score-container">
 				<strong>Current Score: </strong>
@@ -100,6 +120,9 @@ export default function Game() {
 					<p id="tense-pronoun">
 						{currentQuestion.tense} tense - {currentQuestion.pronoun}
 					</p>
+					<div className="validation-message">
+						<span>{errors['answer-input']}</span>
+					</div>
 					<input
 						id="answer-input"
 						autoFocus
