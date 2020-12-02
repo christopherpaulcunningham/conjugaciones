@@ -1,0 +1,10 @@
+.feedback-container {
+    border: 1px solid red;
+    margin: auto;
+    padding: 1em 1em 2em 1em;
+    width:70%;
+}
+
+#btn-finish{
+    float: right;
+}
