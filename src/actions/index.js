@@ -10,9 +10,9 @@ export const actionTypes = {
 	SET_SCORE: 'SET_SCORE',
 	SET_TARGET_SCORE: 'SET_TARGET_SCORE',
 	TOGGLE_CURRENTLY_PLAYING: 'TOGGLE_CURRENTLY_PLAYING',
+	SET_QUESTION_LIST: 'SET_QUESTION_LIST',
 	SET_CURRENT_QUESTION: 'SET_CURRENT_QUESTION',
 	SET_USER_ANSWER: 'SET_USER_ANSWER',
-	GENERATE_QUESTION: 'GENERATE_QUESTION',
 };
 
 export const verbOptions = {
@@ -62,6 +62,10 @@ export function setUserAnswer(answer) {
 
 export function toggleCurrentlyPlaying() {
 	return { type: actionTypes.TOGGLE_CURRENTLY_PLAYING };
+}
+
+export function setQuestionList(list) {
+	return { type: actionTypes.SET_QUESTION_LIST, list}
 }
 
 export function setCurrentQuestion(questionNumber, verb, tense, pronoun, answer ) {

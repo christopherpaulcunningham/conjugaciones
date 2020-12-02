@@ -150,6 +150,7 @@ const initialState = {
 	score: 0,
 	targetScore: 10,
 	currentlyPlaying: false,
+	questionList: [],
 	currentQuestion: {
 		questionNumber: '',
 		englishVerb: '',
@@ -222,6 +223,11 @@ const rootReducer = (state = initialState, action) => {
 			return {
 				...state,
 				currentlyPlaying: !state.currentlyPlaying,
+			};
+		case actionTypes.SET_QUESTION_LIST:
+			return {
+				...state,
+				questionList: action.list,
 			};
 		case actionTypes.SET_CURRENT_QUESTION:
 			return {
