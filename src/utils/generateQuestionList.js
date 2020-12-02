@@ -1,35 +1,64 @@
 import { verbOptions } from '../actions';
-import shuffleArray from "./shuffleArray";
+import shuffleArray from './shuffleArray';
 import VERB_DATA from '../data/data';
 
-export default function generateQuestionList(tenses, pronouns, verbSettings, targetScore) {
-	const questionList = [];
-	
+export default function generateQuestionList (tenses, pronouns, verbSettings, targetScore ) {
+	let questionList = [];
+	const selectedTenses = shuffleArray(tenses).filter((tense) => tense.selected);
+	const selectedPronouns = pronouns.filter((pronoun) => pronoun.selected);
+
 	// Select a list random verbs.
 	const randomVerbList = generateVerbList(VERB_DATA, verbSettings, targetScore);
-	
-	
-	// For each verb in the list, select a random tense and pronoun.
-	randomVerbList.map(verb => {
-		// Select a random tense from those chosen.
-		const selectedTenses = shuffleArray(tenses).filter(tense => tense.selected);
-		const randomTense = selectedTenses[Math.floor(Math.random() * selectedTenses.length)];
 
-		// Select a random pronoun from those chosen.
-		const selectedPronouns = shuffleArray(pronouns).filter(pronoun => pronoun.selected);
-		const randomPronoun = selectedPronouns[Math.floor(Math.random() * selectedPronouns.length)];
-			
-		questionList.push({
-			verb: verb,
-			tense: randomTense.tense,
-			pronoun: randomPronoun.pronoun
-		})
-	})
+	// It's possible that the user has entered a custom verb and not enough verb options to create a full list.
+	// Find all possible combinations from the user options.
+	if (
+		verbSettings.selectedVerbs === verbOptions.USER_DEFINED &&
+		questionList.length < targetScore
+	) {
+		const optionsProperties = {
+			verb: randomVerbList,
+			tense: selectedTenses,
+			pronoun: selectedPronouns,
+		};
+
+		questionList = findAllCombinations(optionsProperties);		
+	} else {
+		// For each verb in the list, select a random tense and pronoun.
+		randomVerbList.forEach((verb) => {
+			// Select a random tense from those chosen.
+			const randomTense = shuffleArray(selectedTenses)[
+				Math.floor(Math.random() * selectedTenses.length)
+			];
+
+			// Select a random pronoun from those chosen.
+			const randomPronoun = shuffleArray(selectedPronouns)[
+				Math.floor(Math.random() * selectedPronouns.length)
+			];
+
+			questionList.push({
+				verb: verb,
+				tense: randomTense.tense,
+				pronoun: randomPronoun.pronoun,
+			});
+		});
+	}
 
 	return questionList;
 }
 
-function generateVerbList(verbArray, verbSettings, targetScore){
+// A method to find all possible combinations of objects.
+function findAllCombinations(object) {
+	let combinations = [{}];
+	for (const [key, values] of Object.entries(object)) {
+		combinations = combinations.flatMap((combo) =>
+			values.map((value) => ({ ...combo, [key]: value }))
+		);
+	}
+	return combinations;
+}
+
+function generateVerbList (verbArray, verbSettings, targetScore) {
 	let verbsInPlay = [];
 
 	// Check the verb options which have been selected.
@@ -52,6 +81,5 @@ function generateVerbList(verbArray, verbSettings, targetScore){
 	// Shuffle the array of verbs and return a list of questions.
 	verbsInPlay = shuffleArray(verbsInPlay);
 
-	
 	return verbsInPlay.slice(0, targetScore);
 }
