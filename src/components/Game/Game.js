@@ -1,11 +1,21 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
-import { setUserAnswer } from '../../actions';
+import {
+	setScore,
+	setUserAnswer,
+	toggleCurrentlyPlaying,
+	setCurrentQuestion,
+} from '../../actions';
+import generateQuestion from "../../utils/generateQuestion"
 import './Game.css';
 
 export default function Game() {
+	const tenses = useSelector((state) => state.tenses);
+	const pronouns = useSelector((state) => state.pronouns);
+	const verbSettings = useSelector((state) => state.verbSettings);
 	const currentQuestion = useSelector((state) => state.currentQuestion);
+	const targetScore = useSelector((state) => state.targetScore);
 	const currentScore = useSelector((state) => state.score);
 	const userAnswer = useSelector((state) => state.userAnswer);
 	const dispatch = useDispatch();
@@ -24,6 +34,52 @@ export default function Game() {
 			)
 		);
 	};
+
+	function submitAnswer() {
+		// Check if the answer is correct.
+		console.log(userAnswer);
+		if (currentQuestion.answers.includes(userAnswer)) {
+			// TODO: The answer is correct. Give feedback to the user.
+			
+
+			// Check if this is the last question.
+			if (currentQuestion.questionNumber === targetScore) {
+				// TODO: The game is finished, so review performance.
+                
+                
+			} else {
+                // Increase the score and generate a new question.
+                setTimeout(() => {                     
+                    dispatch(setScore(currentScore + 1));
+                    generateNextQuestion();
+                 }, 3000);
+
+				
+			}
+		} else {
+			// TODO: The answer is incorrect. Give feedback to the user.
+			
+            
+		}
+	}
+
+	function generateNextQuestion() {
+		const nextQuestion = generateQuestion(tenses, pronouns, verbSettings);
+		const questionNumber = currentQuestion.questionNumber + 1;
+		dispatch(
+			setCurrentQuestion(
+				questionNumber,
+				nextQuestion.verb,
+				nextQuestion.tense,
+				nextQuestion.pronoun,
+				nextQuestion.answer
+			)
+		);
+
+		// Clear the user answer and focus on the answer field.
+		dispatch(setUserAnswer(''));
+		document.getElementById('answer-input').focus();
+	}
 
 	return (
 		<div className="game-container">
@@ -44,7 +100,12 @@ export default function Game() {
 					<p id="tense-pronoun">
 						{currentQuestion.tense} tense - {currentQuestion.pronoun}
 					</p>
-					<input id="answer-input" value={userAnswer} onChange={(event) => dispatch(setUserAnswer(event.target.value))} />
+					<input
+						id="answer-input"
+						autoFocus
+						value={userAnswer}
+						onChange={(event) => dispatch(setUserAnswer(event.target.value))}
+					/>
 					<div className="button-container">
 						{specialCharacters.map((character) => (
 							<button onClick={specialCharacterClick} value={character}>
@@ -54,7 +115,9 @@ export default function Game() {
 					</div>
 				</div>
 			</div>
-			<button id="btn-submit">Submit</button>
+			<button id="btn-submit" onClick={submitAnswer}>
+				Submit
+			</button>
 		</div>
 	);
 }
