@@ -1,4 +1,4 @@
-import React from 'react';	
+import React, { useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { useHistory } from 'react-router-dom';
 import {
@@ -20,6 +20,9 @@ export default function Game() {
 	const dispatch = useDispatch();
 	const history = useHistory();
 
+	const [validation, setValidation] = useState();
+	const [buttonText, setButtonText] = useState('Submit');
+
 	// An array of characters with accents that will be used with buttons on the form.
 	const specialCharacters = ['á', 'é', 'í', 'ó', 'ú', 'ñ'];
 
@@ -33,36 +36,65 @@ export default function Game() {
 					: evt.target.value
 			)
 		);
-	};
+	}
 
-	function submitAnswer() {
-		// Check that the user has provided an answer.
-		if(validateForm()){
-			// Check if the answer is correct.
-			if (currentQuestion.answers.includes(userAnswer)) {
-				// TODO: The answer is correct. Give feedback to the user.
-				
-
-				// Check if this is the last question.
-				if (currentQuestion.questionNumber === targetScore) {
-					dispatch(toggleCurrentlyPlaying());
-					history.push("/feedback");
-					
-				} else {
-					// Increase the score and generate a new question.
+	function handleClick() {
+		if (buttonText === 'Submit') {
+			// Check whether an answer has been submitted.
+			if (validateForm()) {
+				// Check whether the answer is correct
+				if (currentQuestion.answers.includes(userAnswer)) {
+					// The answer is correct. Give positive feedback and increase the score.
+					setValidation('correct');
 					dispatch(setScore(currentScore + 1));
-					generateNextQuestion();
+				} else {
+					if (checkAccentError()) {
+						// Give positive feedback with warning about accents, and increase the score.
+						setValidation('correct-missing-accents');
+					} else {
+						// The answer is incorrect. Give negative feedback.
+						setValidation('incorrect');
+					}
 				}
+
+				// Change the button text.
+				setButtonText('Continue');
+			}
+		} else {
+			// Check whether this is the last question.
+			if (currentQuestion.questionNumber === targetScore) {
+				// End the game.
+				dispatch(setUserAnswer(''))
+				history.push('/feedback');
 			} else {
-				// TODO: The answer is incorrect. Give feedback to the user.
-				
+				// Generate a new question.
 				generateNextQuestion();
 			}
-		}		
+		}
+	}
+
+	// A function to check if the user's answer has a missing and/or extra accent, but is otherwise correct.
+	function checkAccentError() {
+		let accentError = false;
+
+		// Format the user's answer and the question answer(s) to remove accents.
+		const formattedUserAnswer = userAnswer.normalize('NFD').replace(/[\u0300-\u036f]/g, '');
+		const formattedQuestionAnswers = [];
+		currentQuestion.answers.forEach((answer) => {
+			formattedQuestionAnswers.push(
+				answer.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
+			);
+		});
+
+		if(formattedQuestionAnswers.includes(formattedUserAnswer)){
+			accentError = true;
+		}
+
+		return accentError;
 	}
 
 	function generateNextQuestion() {
-		// Get the next question from the list.		
+		// Get the next question from the list.
 		const nextQuestion = questionList[currentQuestion.questionNumber];
 		const questionNumber = currentQuestion.questionNumber + 1;
 		dispatch(
@@ -75,6 +107,10 @@ export default function Game() {
 			)
 		);
 
+		// Reset the button text and validation class.
+		setButtonText('Submit');
+		setValidation('');
+
 		// Clear the user answer and focus on the answer field.
 		dispatch(setUserAnswer(''));
 		document.getElementById('answer-input').focus();
@@ -86,13 +122,13 @@ export default function Game() {
 		history.push('/');
 	}
 
-	const validateForm = () => {
+	function validateForm() {
 		let formErrors = {};
 		let formIsValid = true;
 
 		console.log(userAnswer);
 
-		if(userAnswer === ''){
+		if (userAnswer === '') {
 			formIsValid = false;
 			formErrors['answer-input'] = 'Please enter an answer.';
 		}
@@ -138,8 +174,25 @@ export default function Game() {
 					</div>
 				</div>
 			</div>
-			<button id="btn-submit" onClick={submitAnswer}>
-				Submit
+			{validation === 'correct' && (
+				<div className="correct">
+					<p>CORRECT!</p>
+				</div>
+			)}
+			{validation === 'correct-missing-accents' && (
+				<div className="correct-missing-accents">
+					<p>CORRECT, BUT PLEASE PAY ATTENTION TO ACCENTS!</p>
+					<p>Correct Answer: {currentQuestion.answers[0]}</p>
+				</div>
+			)}
+			{validation === 'incorrect' && (
+				<div className="incorrect">
+					<p>INCORRECT!</p>
+					<p>Correct Answer: {currentQuestion.answers[0]}</p>
+				</div>
+			)}
+			<button id="btn-submit" onClick={handleClick}>
+				{buttonText}
 			</button>
 		</div>
 	);

@@ -53,6 +53,19 @@
     width: 2em;
 }
 
+.correct{
+    background-color: green;
+    width: 100%;
+}
+.correct-missing-accents{
+    background-color: green;
+    width: 100%;
+}
+.incorrect{
+    background-color: red;
+    width: 100%;
+}
+
 #btn-submit{
     float: right;
     /* background-image: url(../../assets/enter.png); */
