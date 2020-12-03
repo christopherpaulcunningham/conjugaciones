@@ -6,7 +6,12 @@ export default function Header() {
     return (
         <nav className="header">
             <div className="title">
-                <Link to="/" className="home-link">LOGO</Link>
+<<<<<<< HEAD
+                <span className="home-link no-select">CONJUGACIONES</span>
+                {/* <Link to="/" className="home-link">CONJUGACIONES</Link> */}
+=======
+                <Link to="/" className="home-link">CONJUGACIONES</Link>
+>>>>>>> 6b25ea3... Styling in progress - pushing for end of day
             </div>
             <ul className="nav-menu">
                 <li className="nav-item">

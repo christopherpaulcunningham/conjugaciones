@@ -2,7 +2,12 @@ import { verbOptions } from '../actions';
 import shuffleArray from './shuffleArray';
 import VERB_DATA from '../data/data';
 
-export default function generateQuestionList (tenses, pronouns, verbSettings, targetScore ) {
+export default function generateQuestionList(
+	tenses,
+	pronouns,
+	verbSettings,
+	targetScore
+) {
 	let questionList = [];
 	const selectedTenses = shuffleArray(tenses).filter((tense) => tense.selected);
 	const selectedPronouns = pronouns.filter((pronoun) => pronoun.selected);
@@ -22,13 +27,13 @@ export default function generateQuestionList (tenses, pronouns, verbSettings, ta
 			pronoun: selectedPronouns,
 		};
 
-		questionList = findAllCombinations(optionsProperties);
-		// questionList.forEach((verb) => {
-		// 	verb.pronoun = verb.pronoun.pronoun;
-		// 	verb.tense = verb.tense.tense;
-		// })
+		let combinationsList = findAllCombinations(optionsProperties);
 
-		// questionList = list;		
+		// For each question in the list, add the answer(s).
+		questionList = combinationsList.map((question) => ({
+			...question,
+			answers: question.verb['conjugations'][question.tense][question.pronoun],
+		}));
 	} else {
 		// For each verb in the list, select a random tense and pronoun.
 		randomVerbList.forEach((verb) => {
@@ -46,11 +51,11 @@ export default function generateQuestionList (tenses, pronouns, verbSettings, ta
 				verb: verb,
 				tense: randomTense.tense,
 				pronoun: randomPronoun.pronoun,
+				answers: verb['conjugations'][randomTense.tense][randomPronoun.pronoun],
 			});
 		});
 	}
-	
-	console.log(questionList);
+
 	return questionList;
 }
 
@@ -66,12 +71,12 @@ function findAllCombinations(object) {
 	combinations.forEach((verb) => {
 		verb.pronoun = verb.pronoun.pronoun;
 		verb.tense = verb.tense.tense;
-	})
+	});
 
 	return combinations;
 }
 
-function generateVerbList (verbArray, verbSettings, targetScore) {
+function generateVerbList(verbArray, verbSettings, targetScore) {
 	let verbsInPlay = [];
 
 	// Check the verb options which have been selected.

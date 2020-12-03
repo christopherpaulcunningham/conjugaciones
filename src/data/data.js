@@ -11701,7 +11701,7 @@ const VERB_DATA = [
 	},
 	{
 		infinitive: 'Besar',
-		infinitive_english: 'k i s s',
+		infinitive_english: 'To kiss',
 		irregular: false,
 		type: '',
 		reflexive: false,
@@ -39261,7 +39261,7 @@ const VERB_DATA = [
 	},
 	{
 		infinitive: 'Esperar',
-		infinitive_english: 'T o hope',
+		infinitive_english: 'To hope',
 		irregular: false,
 		type: '',
 		reflexive: false,
@@ -54341,7 +54341,7 @@ const VERB_DATA = [
 	},
 	{
 		infinitive: 'Merendar',
-		infinitive_english: 'To have a[n afternoon] snack',
+		infinitive_english: 'To have a snack',
 		irregular: true,
 		type: 'e > ie',
 		reflexive: false,

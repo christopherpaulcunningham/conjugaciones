@@ -3,105 +3,120 @@ import { actionTypes, verbOptions } from '../actions';
 const initialState = {
 	tenses: [
 		{
-			category: 'indicative',
+			category: 'Indicative',
 			tense: 'indicative-present',
 			name: 'Present',
 			selected: true,
 			example: 'Vivo',
 		},
 		{
-			category: 'indicative',
+			category: 'Indicative',
 			tense: 'indicative-preterite',
 			name: 'Peterite',
 			selected: true,
 			example: 'Viví',
 		},
 		{
-			category: 'indicative',
+			category: 'Indicative',
 			tense: 'indicative-imperfect',
 			name: 'Imperfect',
 			selected: true,
 			example: 'Vivía',
 		},
 		{
-			category: 'indicative',
+			category: 'Indicative',
 			tense: 'indicative-conditional',
 			name: 'Conditional',
 			selected: true,
 			example: 'Viviría',
 		},
 		{
-			category: 'indicative',
+			category: 'Indicative',
 			tense: 'indicative-future',
 			name: 'Future',
 			selected: true,
 			example: 'Viviré',
 		},
 		{
-			category: 'subjunctive',
+			category: 'Subjunctive',
 			tense: 'subjunctive-present',
 			name: 'Present',
 			selected: false,
 			example: 'Trabaje',
 		},
+		// TODO: Data source currently missing for these tenses.
+<<<<<<< HEAD
+
+		// {
+		// 	category: 'Subjunctive',
+=======
+		// {
+		// 	category: 'subjunctive',
+>>>>>>> 6b25ea3... Styling in progress - pushing for end of day
+		// 	tense: 'subjunctive-imperfect',
+		// 	name: 'Imperfect',
+		// 	selected: false,
+		// 	example: 'Trabajara',
+		// },
+		// {
+<<<<<<< HEAD
+		// 	category: 'Subjunctive',
+=======
+		// 	category: 'subjunctive',
+>>>>>>> 6b25ea3... Styling in progress - pushing for end of day
+		// 	tense: 'subjunctive-future',
+		// 	name: 'Future',
+		// 	selected: false,
+		// 	example: 'Trabajare',
+		// },
 		{
-			category: 'subjunctive',
-			tense: 'subjunctive-imperfect',
-			name: 'Imperfect',
-			selected: false,
-			example: 'Trabajara',
-		},
-		{
-			category: 'subjunctive',
-			tense: 'subjunctive-future',
-			name: 'Future',
-			selected: false,
-			example: 'Trabajare',
-		},
-		{
+<<<<<<< HEAD
+			category: 'Imperative',
+=======
 			category: 'imperative',
+>>>>>>> 6b25ea3... Styling in progress - pushing for end of day
 			tense: 'imperative-affirmative',
 			name: 'Affirmative',
 			selected: false,
 			example: '¡Habla!',
 		},
 		{
-			category: 'imperative',
+			category: 'Imperative',
 			tense: 'imperative-negative',
 			name: 'Negative',
 			selected: false,
 			example: '¡Habla!',
 		},
 		{
-			category: 'continuous',
+			category: 'Continuous',
 			tense: 'continuous-present',
 			name: 'Present',
 			selected: false,
 			example: 'Estoy mirando',
 		},
 		{
-			category: 'perfect',
+			category: 'Perfect',
 			tense: 'perfect-present',
 			name: 'Present',
 			selected: false,
 			example: 'He jugado',
 		},
 		{
-			category: 'perfect',
+			category: 'Perfect',
 			tense: 'perfect-past',
 			name: 'Past',
 			selected: false,
 			example: 'Había jugado',
 		},
 		{
-			category: 'perfect',
+			category: 'Perfect',
 			tense: 'perfect-conditional',
 			name: 'Conditional',
 			selected: false,
 			example: 'Habría jugado',
 		},
 		{
-			category: 'perfect',
+			category: 'Perfect',
 			tense: 'perfect-future',
 			name: 'Future',
 			selected: false,
@@ -151,6 +166,7 @@ const initialState = {
 	targetScore: 10,
 	currentlyPlaying: false,
 	questionList: [],
+	answerList: [],
 	currentQuestion: {
 		questionNumber: '',
 		englishVerb: '',
@@ -230,6 +246,11 @@ const rootReducer = (state = initialState, action) => {
 				...state,
 				questionList: action.list,
 			};
+		case actionTypes.SET_ANSWER_LIST:
+			return {
+				...state,
+				answerList: action.list,
+			};
 		case actionTypes.SET_CURRENT_QUESTION:
 			return {
 				...state,
@@ -240,7 +261,8 @@ const rootReducer = (state = initialState, action) => {
 					pronoun: action.pronoun,
 					tense: action.tense,
 					conjugation: '',
-					answers: action.verb['conjugations'][action.tense][action.pronoun],
+					answers: action.answers,
+					// answers: action.verb['conjugations'][action.tense][action.pronoun],
 				},
 			};
 		case actionTypes.SET_USER_ANSWER:
