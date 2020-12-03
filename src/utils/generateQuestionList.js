@@ -7,7 +7,7 @@ export default function generateQuestionList (tenses, pronouns, verbSettings, ta
 	const selectedTenses = shuffleArray(tenses).filter((tense) => tense.selected);
 	const selectedPronouns = pronouns.filter((pronoun) => pronoun.selected);
 
-	// Select a list random verbs.
+	// Select a list of random verbs.
 	const randomVerbList = generateVerbList(VERB_DATA, verbSettings, targetScore);
 
 	// It's possible that the user has entered a custom verb and not enough verb options to create a full list.
@@ -22,7 +22,13 @@ export default function generateQuestionList (tenses, pronouns, verbSettings, ta
 			pronoun: selectedPronouns,
 		};
 
-		questionList = findAllCombinations(optionsProperties);		
+		questionList = findAllCombinations(optionsProperties);
+		// questionList.forEach((verb) => {
+		// 	verb.pronoun = verb.pronoun.pronoun;
+		// 	verb.tense = verb.tense.tense;
+		// })
+
+		// questionList = list;		
 	} else {
 		// For each verb in the list, select a random tense and pronoun.
 		randomVerbList.forEach((verb) => {
@@ -43,7 +49,8 @@ export default function generateQuestionList (tenses, pronouns, verbSettings, ta
 			});
 		});
 	}
-
+	
+	console.log(questionList);
 	return questionList;
 }
 
@@ -55,6 +62,12 @@ function findAllCombinations(object) {
 			values.map((value) => ({ ...combo, [key]: value }))
 		);
 	}
+
+	combinations.forEach((verb) => {
+		verb.pronoun = verb.pronoun.pronoun;
+		verb.tense = verb.tense.tense;
+	})
+
 	return combinations;
 }
 
