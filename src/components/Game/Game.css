@@ -1,72 +1,180 @@
 .game-container {
-    border: 1px solid red;
-    margin: auto;
-    padding: 1em 1em 2em 1em;
-    width:70%;
+	background-color: #ffffff;
+	border-radius: 1.5rem;
+	margin: auto;
+	overflow: hidden;
+	padding: 1rem;
+	width: 70%;
 }
 
-.nav-button{
-    width: 50%;
-    float: left;
-}
-.score-container{
-    width: 50%;
-    float: right;
-    text-align: right;
+.nav-button {
+	float: left;
+	width: 5%;
 }
 
-.game-section{
-    margin: 2em auto 1em;
-    text-align: center;
-    width: 40%;
+#btn-previous {
+	height: 2rem;
+	width: 2rem;
+}
+#btn-previous:hover {
+	opacity: 0.5;
 }
 
-.section-title{
-    margin-bottom: 0.7em;
+.progress-container {
+	float: right;
+	margin-top: 0.25rem;
+	width: 90%;
 }
 
-#verb{
-    margin-bottom: 1em;
+.game-section {
+	margin: 2em auto 1em;
+	text-align: center;
+	width: 80%;
 }
-#spanish-verb, #english-verb{
-    font-size: 1.2em;
+
+.section-title {
+	margin-bottom: 0.7rem;
+	font-size: 1.5rem;
+	font-weight: 600;
+}
+
+#verb {
+	margin-bottom: 1rem;
+}
+#spanish-verb {
+	font-size: 1.2rem;
     font-weight: 600;
+    margin-bottom: 0.3rem;
+}
+#english-verb {
+    font-size: 0.9rem;
 }
 
-#tense-pronoun{
-    margin-bottom: 1em;
+.tense-pronoun {
+    margin: 1rem auto;
+    width: 100%
 }
 
-.game-label{
+.tense-pronoun span {
+    display: inline-block;    
+}
+.left-span{
+    text-align: left;
+    width: 5rem;
+}
+.right-span{
+    margin-left: 0.5rem;
+    text-align: left;
+    width: 10rem;
+}
+#tense-pronoun {
+	margin-bottom: 1rem;
+}
+
+.game-label {
+	text-align: center;
+	width: 6rem;
+}
+
+#answer-input {
+	margin: 0rem 0 1rem 0;
+}
+
+.special-characters button {
+	background-color: #ffffff;
+	border: 1px solid #a0a0a0;
+	border-radius: 5px;
+	height: 2rem;
+	margin: 0.3rem;
+	text-align: center;
+	width: 2rem;
+}
+
+.special-characters button:hover {
+	background-color: #f1f0f0;
+}
+
+/* VALIDATION */
+.validation-section {
+	margin: 0 auto 1rem;
+	width: 70%;
+}
+
+.answer-validation {
+	display: flex;
+	border-radius: 10px;
+	padding: 1rem;
+}
+
+.feedback-header {
+	font-weight: 600;
+	margin-bottom: 0.3rem;
+}
+
+.correct {
+	background-color: #bcf063;
+	color: #446b00;
+	width: 100%;
+}
+.correct-with-issue {
+	background-color: #bcf063;
+	color: #446b00;
+	width: 100%;
+}
+.incorrect {
+	background-color: #f8baba;
+	color: #e60101;
+	width: 100%;
+}
+
+
+
+.centered {
     text-align: center;
-    width: 6em;
 }
 
-#answer-input{
-    margin-bottom: 1em;
+.validation-image {
+	vertical-align: middle;
 }
 
-.button-container button{
-    height: 2em;
-    margin: 0.3em;    
-    text-align: center;
-    width: 2em;
+.validation-image img {
+	height: 2.5rem;
+	width: 2.5rem;
 }
 
-.correct{
-    background-color: green;
-    width: 100%;
-}
-.correct-missing-accents{
-    background-color: green;
-    width: 100%;
-}
-.incorrect{
-    background-color: red;
-    width: 100%;
+.validation-comment {
+	display: inline;
+	margin: 0rem 1.5rem;
+	text-align: left;
 }
 
-#btn-submit{
-    float: right;
-    /* background-image: url(../../assets/enter.png); */
+/* SUBMIT BUTTON */
+.button-section {
+	float: right;
+}
+
+#btn-submit {
+	background-color: #98c24e;
+	border: none;
+	border-radius: 8px;
+	color: #ffffff;
+	float: right;
+	font-size: 90%;
+	font-weight: 700;
+	height: 2.5rem;
+	/* margin-top: 1rem; */
+	text-decoration: none;
+	user-select: none;
+	width: 10rem;
+}
+
+#btn-submit:active {
+	background-color: #7ea33e;
+	-webkit-box-shadow: 0px 10px 0px 0px #03352152;
+	-moz-box-shadow: 0px 10px 0px 0px #03352152;
+	box-shadow: 0px 0px 10px 0px #03352152;
+}
+
+#btn-submit:hover {
+	background-color: #7ea33e;
 }

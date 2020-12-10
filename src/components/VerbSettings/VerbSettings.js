@@ -12,9 +12,11 @@ import {
 	setCurrentQuestion,
 	setTargetScore,
 	setErrors,
+	setUserAnswer
 } from '../../actions';
 import generateQuestionList from '../../utils/generateQuestionList';
 import PronounItem from '../PronounItem/PronounItem';
+import warning from '../../resources/exclamation.png';
 import './VerbSettings.css';
 
 export default function VerbSettings() {
@@ -27,12 +29,12 @@ export default function VerbSettings() {
 	const dispatch = useDispatch();
 	const history = useHistory();
 
-	function handleSubmitClick(){
+	function handleSubmitClick() {
 		if (validateForm()) {
 			setUpGame();
 		}
 	}
-	
+
 	const validateForm = () => {
 		let formErrors = {};
 		let formIsValid = true;
@@ -65,7 +67,7 @@ export default function VerbSettings() {
 
 		dispatch(setErrors(formErrors));
 		return formIsValid;
-	}
+	};
 
 	function setUpGame() {
 		setTimeout(() => {
@@ -85,128 +87,170 @@ export default function VerbSettings() {
 			}
 
 			// Setup the initial question.
-			const intialQuestion = questionList[0];
+			const initialQuestion = questionList[0];
 			dispatch(
 				setCurrentQuestion(
 					1,
-					intialQuestion.verb,
-					intialQuestion.tense,
-					intialQuestion.pronoun
+					initialQuestion.verb,
+					initialQuestion.tense,
+					initialQuestion.pronoun, 
+					initialQuestion.answers
 				)
 			);
 
-			//Start the game. 
+			// Clear the user answer, incase the user has played previously.
+			dispatch(setUserAnswer(''));
+
+			//Start the game.
 			dispatch(toggleCurrentlyPlaying());
 			history.push('/game');
 		}, 1000);
 	}
 
 	return (
-		<div className="settings-column" id="settings-column">
-			<div className="column-header">Additional Settings</div>
-			<div className="validation-message">
-				<span>{errors['pronouns']}</span>
-			</div>
-			<span className="section-header">Pronouns</span>
-			<div className="settings-section">
-				{pronouns.map((pronoun) => (
-					<PronounItem
-						key={pronoun.pronoun}
-						id={pronoun.pronoun}
-						name={pronoun.name}
-						selected={pronoun.selected}
-						onClick={() => dispatch(togglePronoun(pronoun))}
-					/>
-				))}
-			</div>
-			<span className="section-header">Verb Types</span>
-			<div className="settings-section">
-				<span>Irregular Verbs</span>
-				<div className="btn-group">
-					<input
-						key={1}
-						type="radio"
-						id="irregular-include"
-						checked={verbSettings.irregularVerbs === 'INCLUDE'}
-						onClick={() => dispatch(setIrregularVerbs('INCLUDE'))}
-					/>
-					<label>Include</label>
-					<input
-						key={2}
-						type="radio"
-						id="irregular-exclude"
-						checked={verbSettings.irregularVerbs === 'EXCLUDE'}
-						onClick={() => dispatch(setIrregularVerbs('EXCLUDE'))}
-					/>
-					<label>Exclude</label>
-				</div>
-			</div>
-			<div className="settings-section">
-				<span>Reflexive Verbs</span>
-				<div className="btn-group">
-					<input
-						key={3}
-						type="radio"
-						id="reflexive-include"
-						checked={verbSettings.reflexiveVerbs === 'INCLUDE'}
-						onClick={() => dispatch(setReflexiveVerbs('INCLUDE'))}
-					/>
-					<label>Include</label>
-					<input
-						key={4}
-						type="radio"
-						id="reflexive-exclude"
-						checked={verbSettings.reflexiveVerbs === 'EXCLUDE'}
-						onClick={() => dispatch(setReflexiveVerbs('EXCLUDE'))}
-					/>
-					<label>Exclude</label>
-				</div>
-			</div>
-			<div className="settings-section">
-				<span>Verbs To Use</span>
-				<div className="btn-group">
-					<input
-						key={5}
-						type="radio"
-						id="verbs-all"
-						checked={verbSettings.selectedVerbs === 'ALL'}
-						onClick={() => dispatch(setSelectedVerbs('ALL'))}
-					/>
-					<label onClick={() => dispatch(setSelectedVerbs('ALL'))}>All</label>
-					<input
-						key={6}
-						type="radio"
-						id="verbs-common"
-						checked={verbSettings.selectedVerbs === 'COMMON'}
-						onClick={() => dispatch(setSelectedVerbs('COMMON'))}
-					/>
-					<label onClick={() => dispatch(setSelectedVerbs('COMMON'))}>
-						The most common
-					</label>
-					<input
-						key={7}
-						type="radio"
-						id="verbs-user-defined"
-						checked={verbSettings.selectedVerbs === 'USER_DEFINED'}
-						onClick={() => dispatch(setSelectedVerbs('USER_DEFINED'))}
-					/>
-					<label onClick={() => dispatch(setSelectedVerbs('USER_DEFINED'))}>
-						The following:
-					</label>
+		<div className="settings-container">
+			<div className="settings-title">Additional Settings</div>
+			<div className="section">
+				{errors['pronouns'] !== undefined && (
 					<div className="validation-message">
-						<span>{errors['custom-verbs']}</span>
+						<img class="warning-image" src={warning} alt="warning"></img>
+						<span>{errors['pronouns']}</span>
 					</div>
-					<input
-						id="custom-verbs"
-						value={verbSettings.userDefinedVerbs}
-						onChange={(evt) => dispatch(setUserDefinedVerbs(evt.target.value))}
-						placeholder="Enter some verbs followed by a comma. e.g. estar, ver, hablar"
-					></input>
+				)}
+				<span className="section-header">Pronouns</span>
+				<div className="settings-section pronoun-section">
+					{pronouns.map((pronoun) => (
+						<PronounItem
+							key={pronoun.pronoun}
+							id={pronoun.pronoun}
+							name={pronoun.name}
+							selected={pronoun.selected}
+							onClick={() => dispatch(togglePronoun(pronoun))}
+						/>
+					))}
 				</div>
-				<div className="button-section">
-					<button type="submit" id="btn-start" onClick={handleSubmitClick}>
-						Start
-					</button>
+				<span className="section-header">Verb Types</span>
+				<div className="settings-section">
+					<span>Irregular Verbs</span>
+					<div className="button-group">
+						<input
+							type="radio"
+							id="irregular-include"
+							checked={verbSettings.irregularVerbs === 'INCLUDE'}
+						/>
+						<label
+							className="button-left"
+							htmlFor="irregular-include"
+							onClick={() => dispatch(setIrregularVerbs('INCLUDE'))}
+						>
+							INCLUDE
+						</label>
+						<input
+							type="radio"
+							id="irregular-exclude"
+							checked={verbSettings.irregularVerbs === 'EXCLUDE'}
+						/>
+						<label
+							className="button-right"
+							htmlFor="irregular-exclude"
+							onClick={() => dispatch(setIrregularVerbs('EXCLUDE'))}
+						>
+							EXCLUDE
+						</label>
+					</div>
+				</div>
+				<div className="settings-section">
+					<span>Reflexive Verbs</span>
+					<div className="button-group">
+						<input
+							type="radio"
+							id="reflexive-include"
+							checked={verbSettings.reflexiveVerbs === 'INCLUDE'}
+						/>
+						<label
+							className="button-left"
+							htmlFor="reflexive-include"
+							onClick={() => dispatch(setReflexiveVerbs('INCLUDE'))}
+						>
+							INCLUDE
+						</label>
+						<input
+							type="radio"
+							id="reflexive-exclude"
+							checked={verbSettings.reflexiveVerbs === 'EXCLUDE'}
+						/>
+						<label
+							className="button-right"
+							htmlFor="reflexive-exclude"
+							onClick={() => dispatch(setReflexiveVerbs('EXCLUDE'))}
+						>
+							EXCLUDE
+						</label>
+					</div>
+				</div>
+				<div className="settings-section">
+					<span>Verbs To Use</span>
+					<div className="button-group">
+						<input
+							type="radio"
+							id="verbs-all"
+							checked={verbSettings.selectedVerbs === 'ALL'}
+						/>
+						<label
+							className="button-left"
+							htmlFor="verbs-all"
+							onClick={() => dispatch(setSelectedVerbs('ALL'))}
+						>
+							ALL
+						</label>
+						<input
+							type="radio"
+							id="verbs-common"
+							checked={verbSettings.selectedVerbs === 'COMMON'}
+						/>
+						<label
+							className="button-middle"
+							htmlFor="verbs-common"
+							onClick={() => dispatch(setSelectedVerbs('COMMON'))}
+						>
+							COMMON
+						</label>
+						<input
+							type="radio"
+							id="verbs-user-defined"
+							checked={verbSettings.selectedVerbs === 'USER_DEFINED'}
+						/>
+						<label
+							className="button-right"
+							htmlFor="verbs-user-defined"
+							onClick={() => dispatch(setSelectedVerbs('USER_DEFINED'))}
+						>
+							CUSTOM
+						</label>
+					</div>
+					{verbSettings.selectedVerbs === 'USER_DEFINED' && (
+						<div>
+							{errors['custom-verbs'] !== undefined && (
+								<div className="validation-message">
+									<img class="warning-image" src={warning} alt="warning"></img>
+									<span>{errors['custom-verbs']}</span>
+								</div>
+							)}
+							<input
+								id="custom-verbs"
+								value={verbSettings.userDefinedVerbs}
+								onChange={(evt) =>
+									dispatch(setUserDefinedVerbs(evt.target.value))
+								}
+								placeholder="Enter some verbs followed by a comma. e.g. estar, ver, hablar"
+							></input>
+						</div>
+					)}
+					<div className="button-section">
+						<button type="submit" id="btn-start" className="no-select" onClick={handleSubmitClick}>
+							START
+						</button>
+					</div>
 				</div>
 			</div>
 		</div>

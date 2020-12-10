@@ -6,7 +6,8 @@ export default function Header() {
     return (
         <nav className="header">
             <div className="title">
-                <Link to="/" className="home-link">LOGO</Link>
+                <span className="home-link no-select">CONJUGACIONES</span>
+                {/* <Link to="/" className="home-link">CONJUGACIONES</Link> */}
             </div>
             <ul className="nav-menu">
                 <li className="nav-item">

@@ -1,45 +1,51 @@
-p{
-    margin: 0;
-    padding: 0;
+p {
+	margin: 0;
+	padding: 0;
 }
 
-.settings-column {
-    align-content: center;
-    border: 0;
-    border-radius: 0 0 2px 2px;
-    box-shadow: 0 2px 4px 0 hsla(0,0%,0%,0.15);
-    margin: 1em 1em;
-    padding: 1em;
-	width: 40%;
+.settings-container {
+	align-content: center;
+	width: 50%;
 }
 
-.help-text{
-    font-size: 0.8em;
-    font-weight: 300;
-    margin-bottom: 1em;
-    padding-bottom: 0.55em;
-    text-align: center;
-    width: 100%;
+.settings-title {
+	color: #ffffff;
+	font-weight: 700;
+	margin-bottom: 1em;
+	text-align: center;
+}
+
+.section {
+	align-items: center;
+	background-color: #ffffff;
+	border-radius: 1.5em;
+	margin: auto;
+	overflow: hidden;
+	padding: 1em;
+	width: 85%;
+
+	-webkit-box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.42);
+	-moz-box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.42);
+	box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.42);
+}
+
+.section-header {
+    font-weight: 500;
+    margin-bottom: 0.5em;
 }
 
 .options-section{
-    margin: 0.4em 0 1em 0;
+    margin-bottom: 1em;
 }
 
-.options-section-left{
-    width: 50%;
-    float: left;
+.left-section {
+	float: left;
+	width: 49%;
 }
 
-.options-section-right{
-    width: 50%;
-    float: right;
+.right-section {
+	float: right;
+	width: 49%;
 }
 
-.validation-message{
-    color: #ff0000;
-    font-size: 0.8em;
-    height:0.5em;
-    margin: 0.5em 0;
-    text-align: left;
-}
+

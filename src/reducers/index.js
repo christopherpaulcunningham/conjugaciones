@@ -44,20 +44,21 @@ const initialState = {
 			selected: false,
 			example: 'Trabaje',
 		},
-		{
-			category: 'subjunctive',
-			tense: 'subjunctive-imperfect',
-			name: 'Imperfect',
-			selected: false,
-			example: 'Trabajara',
-		},
-		{
-			category: 'subjunctive',
-			tense: 'subjunctive-future',
-			name: 'Future',
-			selected: false,
-			example: 'Trabajare',
-		},
+		// TODO: Data source currently missing for these tenses.
+		// {
+		// 	category: 'subjunctive',
+		// 	tense: 'subjunctive-imperfect',
+		// 	name: 'Imperfect',
+		// 	selected: false,
+		// 	example: 'Trabajara',
+		// },
+		// {
+		// 	category: 'subjunctive',
+		// 	tense: 'subjunctive-future',
+		// 	name: 'Future',
+		// 	selected: false,
+		// 	example: 'Trabajare',
+		// },
 		{
 			category: 'imperative',
 			tense: 'imperative-affirmative',

@@ -1,22 +1,21 @@
-.header{
-    align-items: center;
-	background-color: #ffffff;
-	color: #b11409;
-    display: flex;
-    height: 5em;
+.header {
+	align-items: center;
+	color: #ffffff;
+	display: flex;
+	height: 5em;
 	justify-content: space-between;
 	width: 100%;
 }
 
-.title{
-    font-size: 2em;
-    font-weight: 500;
+.title {
+	font-size: 2em;
+	font-weight: 500;
 	padding: 0 2em;
 }
 
 .nav-menu {
-	list-style: none;
 	display: flex;
+	list-style: none;
 	justify-content: flex-end;
 	padding-right: 2rem;
 }
@@ -25,9 +24,9 @@
 	color: #dd3b2f;
 }
 
-.link, .home-link{
+.link,
+.home-link {
+	color: #ffffff;
 	padding: 10px 15px;
-	text-decoration: none;
-	color: #b11409;
 	text-decoration: none;
 }
