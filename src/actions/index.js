@@ -11,6 +11,7 @@ export const actionTypes = {
 	SET_TARGET_SCORE: 'SET_TARGET_SCORE',
 	TOGGLE_CURRENTLY_PLAYING: 'TOGGLE_CURRENTLY_PLAYING',
 	SET_QUESTION_LIST: 'SET_QUESTION_LIST',
+	SET_ANSWER_LIST: 'SET_ANSWER_LIST',
 	SET_CURRENT_QUESTION: 'SET_CURRENT_QUESTION',
 	SET_USER_ANSWER: 'SET_USER_ANSWER',
 	SET_ERRORS: 'SET_ERRORS'
@@ -69,8 +70,12 @@ export function setQuestionList(list) {
 	return { type: actionTypes.SET_QUESTION_LIST, list}
 }
 
-export function setCurrentQuestion(questionNumber, verb, tense, pronoun, answer ) {
-	return { type: actionTypes.SET_CURRENT_QUESTION, questionNumber, verb, tense, pronoun, answer };
+export function setAnswerList(list) {
+	return { type: actionTypes.SET_ANSWER_LIST, list}
+}
+
+export function setCurrentQuestion(questionNumber, verb, tense, pronoun, answers ) {
+	return { type: actionTypes.SET_CURRENT_QUESTION, questionNumber, verb, tense, pronoun, answers };
 }
 
 export function setErrors(errors) {

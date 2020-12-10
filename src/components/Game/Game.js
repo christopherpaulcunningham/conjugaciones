@@ -5,6 +5,7 @@ import {
 	setScore,
 	setUserAnswer,
 	toggleCurrentlyPlaying,
+	setAnswerList,
 	setCurrentQuestion,
 	setErrors,
 } from '../../actions';
@@ -21,6 +22,7 @@ export default function Game() {
 	const currentQuestion = useSelector((state) => state.currentQuestion);
 	const targetScore = useSelector((state) => state.targetScore);
 	const currentScore = useSelector((state) => state.score);
+	const answerList = useSelector((state) => state.answerList);
 	const userAnswer = useSelector((state) => state.userAnswer);
 	const selectedPronouns = useSelector((state) => state.pronouns);
 	const errors = useSelector((state) => state.errors);
@@ -55,6 +57,9 @@ export default function Game() {
 				// Covert the user's answer to lower case to prevent issues with capitalisation.
 				const userAnswerLowerCase = userAnswer.toLowerCase();
 
+				// Add to the list of answers. This will be used to review performance later.
+				dispatch(setAnswerList([...answerList, {answer: userAnswerLowerCase}]));
+
 				// Check whether the answer is correct
 				if (currentQuestion.answers.includes(userAnswerLowerCase)) {
 					// The answer is correct. Give positive feedback and increase the score.
@@ -82,7 +87,6 @@ export default function Game() {
 			} else {
 				// Generate a new question.
 				generateNextQuestion();
-
 				
 				window.setTimeout(function () { 
 					document.getElementById('answer-input').focus(); 
@@ -161,8 +165,6 @@ export default function Game() {
 	document.onkeydown = function (evt) {
 		if (evt.code === 'Enter') {
 			handleClick();
-			// Refocus on the answer field.
-			document.getElementById('answer-input').focus();
 		}
 	};
 
