@@ -1,10 +1,53 @@
 .feedback-container {
-    border: 1px solid red;
-    margin: auto;
-    padding: 1em 1em 2em 1em;
-    width:70%;
+    background-color: #ffffff;
+    border-radius: 1.5em;
+	margin: auto;
+    overflow: hidden;
+	padding: 1em;
+	width: 70%;
+}
+/* SCORE */
+.score-section {
+	font-size: 1.2rem;
+	font-weight: 600;
+	margin: 1rem auto;
+	text-align: center;
+	width: 30%;
 }
 
-#btn-finish{
-    float: right;
+/* QUESTIONS */
+.review-question{
+	margin: 0.5em auto;
+	width: 80%;
+}
+
+/* FINISH BUTTON */
+.button-section {
+	float: right;
+	margin-top: 1rem;
+}
+
+#btn-finish {
+	background-color: #98c24e;
+	border: none;
+	border-radius: 8px;
+	color: #ffffff;
+	float: right;
+	font-size: 90%;
+	font-weight: 700;
+	height: 2.5rem;
+	text-decoration: none;
+	user-select: none;
+	width: 10rem;
+}
+
+#btn-finish:active {
+	background-color: #7ea33e;
+	-webkit-box-shadow: 0px 10px 0px 0px #03352152;
+	-moz-box-shadow: 0px 10px 0px 0px #03352152;
+	box-shadow: 0px 0px 10px 0px #03352152;
+}
+
+#btn-finish:hover {
+	background-color: #7ea33e;
 }

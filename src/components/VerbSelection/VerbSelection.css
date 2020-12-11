@@ -19,13 +19,8 @@ p {
 	align-items: center;
 	background-color: #ffffff;
 	border-radius: 1.5em;
-<<<<<<< HEAD
 	margin: auto;
 	overflow: hidden;
-=======
-	height: 28em;
-	margin: auto;
->>>>>>> 6b25ea3... Styling in progress - pushing for end of day
 	padding: 1em;
 	width: 85%;
 
@@ -53,14 +48,3 @@ p {
 	width: 49%;
 }
 
-<<<<<<< HEAD
-
-=======
-.validation-message {
-	color: #ff0000;
-	font-size: 0.8em;
-	height: 0.5em;
-	margin: 0.5em 0;
-	text-align: left;
-}
->>>>>>> 6b25ea3... Styling in progress - pushing for end of day
