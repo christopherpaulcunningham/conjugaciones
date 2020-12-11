@@ -9,6 +9,7 @@ import {
 	setCurrentQuestion,
 	setErrors,
 } from '../../actions';
+import checkAccentError from '../../utils/checkAccentError'
 
 import ProgressBar from '../ProgressBar/ProgressBar';
 import incorrectIcon from '../../resources/incorrect-icon.png';
@@ -66,9 +67,10 @@ export default function Game() {
 					setValidation('correct');
 					dispatch(setScore(currentScore + 1));
 				} else {
-					if (checkAccentError(userAnswerLowerCase)) {
+					if (checkAccentError(currentQuestion.answers, userAnswerLowerCase)) {
 						// Give positive feedback with warning about accents, and increase the score.
 						setValidation('correct-with-issue');
+						dispatch(setScore(currentScore + 1));
 					} else {
 						// The answer is incorrect. Give negative feedback.
 						setValidation('incorrect');
@@ -93,28 +95,6 @@ export default function Game() {
 				}, 0); 
 			}
 		}
-	}
-
-	// A function to check if the user's answer has a missing and/or extra accent, but is otherwise correct.
-	function checkAccentError(answer) {
-		let accentError = false;
-
-		// Format the user's answer and the question answer(s) to remove accents.
-		const formattedUserAnswer = answer
-			.normalize('NFD')
-			.replace(/[\u0300-\u036f]/g, '');
-		const formattedQuestionAnswers = [];
-		currentQuestion.answers.forEach((answer) => {
-			formattedQuestionAnswers.push(
-				answer.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-			);
-		});
-
-		if (formattedQuestionAnswers.includes(formattedUserAnswer)) {
-			accentError = true;
-		}
-
-		return accentError;
 	}
 
 	function generateNextQuestion() {
@@ -250,7 +230,7 @@ export default function Game() {
 					<div className="correct-with-issue answer-validation">
 						<div className="validation-image">
 							<img
-								class="corect-image"
+								className="corect-image"
 								src={correctIcon}
 								alt="Correct icon."
 							></img>
@@ -259,7 +239,7 @@ export default function Game() {
 							<p className="feedback-header">
 								Correct, but please pay attention to accents!
 							</p>
-							<p>Correct solution: {currentQuestion.answers[0]}</p>
+							<p>Correct solution(s): {currentQuestion.answers.join(", ")}</p>
 						</div>
 					</div>
 				)}
@@ -267,14 +247,14 @@ export default function Game() {
 					<div className="incorrect answer-validation">
 						<div className="validation-image">
 							<img
-								class="incorect-image"
+								className="incorect-image"
 								src={incorrectIcon}
 								alt="Incorrect icon."
 							></img>
 						</div>
 						<div className="validation-comment">
-							<p className="feedback-header">Correct solution:</p>
-							<p>{currentQuestion.answers[0]}</p>
+							<p className="feedback-header">Correct solution(s):</p>
+							<p>{currentQuestion.answers.join(", ")}</p>
 						</div>
 					</div>
 				)}

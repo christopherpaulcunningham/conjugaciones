@@ -120,16 +120,12 @@
 	margin-bottom: 0.3rem;
 }
 
-.correct {
+.correct, .correct-with-issue {
 	background-color: #bcf063;
 	color: #446b00;
 	width: 100%;
 }
-.correct-with-issue {
-	background-color: #bcf063;
-	color: #446b00;
-	width: 100%;
-}
+
 .incorrect {
 	background-color: #f8baba;
 	color: #e60101;
