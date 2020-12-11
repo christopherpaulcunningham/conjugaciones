@@ -30,13 +30,19 @@ export default function generateQuestionList(
 		let combinationsList = findAllCombinations(optionsProperties);
 
 		// For each question in the list, add the answer(s).
-		questionList = combinationsList.map((question) => ({
+		questionList = combinationsList.map((question, index) => ({
+			questionNumber: index + 1,
 			...question,
 			answers: question.verb['conjugations'][question.tense][question.pronoun],
 		}));
+
+		if (questionList.length > targetScore) {
+			// Trim the list so it contains the correct number of questions.
+			questionList = questionList.slice(0, targetScore);
+		}
 	} else {
 		// For each verb in the list, select a random tense and pronoun.
-		randomVerbList.forEach((verb) => {
+		randomVerbList.forEach((verb, index) => {
 			// Select a random tense from those chosen.
 			const randomTense = shuffleArray(selectedTenses)[
 				Math.floor(Math.random() * selectedTenses.length)
@@ -48,6 +54,7 @@ export default function generateQuestionList(
 			];
 
 			questionList.push({
+				questionNumber: index + 1,
 				verb: verb,
 				tense: randomTense.tense,
 				pronoun: randomPronoun.pronoun,

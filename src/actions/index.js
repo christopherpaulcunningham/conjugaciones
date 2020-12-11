@@ -1,6 +1,7 @@
 import VERB_DATA from '../data/data';
 
 export const actionTypes = {
+	SET_DISPLAY_LANGUAGE: 'SET_DISPLAY_LANGUAGE',
 	TOGGLE_TENSE: 'TOGGLE_TENSE',
 	TOGGLE_PRONOUN: 'TOGGLE_PRONOUN',
 	SET_IRREGULAR: 'SET_IRREGULAR',
@@ -14,7 +15,7 @@ export const actionTypes = {
 	SET_ANSWER_LIST: 'SET_ANSWER_LIST',
 	SET_CURRENT_QUESTION: 'SET_CURRENT_QUESTION',
 	SET_USER_ANSWER: 'SET_USER_ANSWER',
-	SET_ERRORS: 'SET_ERRORS'
+	SET_ERRORS: 'SET_ERRORS',
 };
 
 export const verbOptions = {
@@ -24,6 +25,10 @@ export const verbOptions = {
 	INCLUDE: 'INCLUDE',
 	EXCLUDE: 'EXCLUDE',
 };
+
+export function setDisplayLanguage(language) {
+	return { type: actionTypes.SET_DISPLAY_LANGUAGE, language };
+}
 
 export function toggleTense(tense) {
 	return { type: actionTypes.TOGGLE_TENSE, tense };
@@ -46,7 +51,13 @@ export function setSelectedVerbs(option) {
 }
 
 export function setUserDefinedVerbs(verbString) {
-	const validVerbs = VERB_DATA.filter((verbs) => verbString.toLowerCase().replace(/ /g, '').split(',').includes(verbs.infinitive.toLowerCase()));
+	const validVerbs = VERB_DATA.filter((verbs) =>
+		verbString
+			.toLowerCase()
+			.replace(/ /g, '')
+			.split(',')
+			.includes(verbs.infinitive.toLowerCase())
+	);
 	return { type: actionTypes.SET_USER_DEFINED_VERBS, verbString, validVerbs };
 }
 
@@ -67,17 +78,30 @@ export function toggleCurrentlyPlaying() {
 }
 
 export function setQuestionList(list) {
-	return { type: actionTypes.SET_QUESTION_LIST, list}
+	return { type: actionTypes.SET_QUESTION_LIST, list };
 }
 
 export function setAnswerList(list) {
-	return { type: actionTypes.SET_ANSWER_LIST, list}
+	return { type: actionTypes.SET_ANSWER_LIST, list };
 }
 
-export function setCurrentQuestion(questionNumber, verb, tense, pronoun, answers ) {
-	return { type: actionTypes.SET_CURRENT_QUESTION, questionNumber, verb, tense, pronoun, answers };
+export function setCurrentQuestion(
+	questionNumber,
+	verb,
+	tense,
+	pronoun,
+	answers
+) {
+	return {
+		type: actionTypes.SET_CURRENT_QUESTION,
+		questionNumber,
+		verb,
+		tense,
+		pronoun,
+		answers,
+	};
 }
 
 export function setErrors(errors) {
-	return { type: actionTypes.SET_ERRORS, errors}
+	return { type: actionTypes.SET_ERRORS, errors };
 }

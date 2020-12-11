@@ -1,155 +1,188 @@
 import { actionTypes, verbOptions } from '../actions';
 
 const initialState = {
+	displayLanguage: 'ENG',
 	tenses: [
 		{
+			id: '1',
 			category: 'Indicative',
-			tense: 'indicative-present',
+			tense: 'Indicative Present',
+			tenseESP: 'Presente Indicativo',
 			name: 'Present',
+			nameESP: 'Presente',
 			selected: true,
 			example: 'Vivo',
 		},
 		{
+			id: '2',
 			category: 'Indicative',
-			tense: 'indicative-preterite',
+			tense: 'Indicative Preterite',
+			tenseESP: 'Pretérito Indicativo',
 			name: 'Peterite',
+			nameESP: 'Pretérito',
 			selected: true,
 			example: 'Viví',
 		},
 		{
+			id: '3',
 			category: 'Indicative',
-			tense: 'indicative-imperfect',
+			tense: 'Indicative Imperfect',
+			tenseESP: 'Imperfecto Indicativo',
 			name: 'Imperfect',
+			nameESP: 'Imperfecto',
 			selected: true,
 			example: 'Vivía',
 		},
 		{
+			id: '4',
 			category: 'Indicative',
-			tense: 'indicative-conditional',
+			tense: 'Indicative Conditional',
+			tenseESP: 'Condicional Indicativo',
 			name: 'Conditional',
+			nameESP: 'Condicional',
 			selected: true,
 			example: 'Viviría',
 		},
 		{
+			id: '5',
 			category: 'Indicative',
-			tense: 'indicative-future',
+			tense: 'Indicative Future',
+			tenseESP: 'Futuro Indicativo',
 			name: 'Future',
+			nameESP: 'Futuro',
 			selected: true,
 			example: 'Viviré',
 		},
 		{
+			id: '6',
 			category: 'Subjunctive',
-			tense: 'subjunctive-present',
+			tense: 'Subjunctive Present',
+			tenseESP: 'Subjuntivo Presente',
 			name: 'Present',
+			nameESP: 'Presente',
 			selected: false,
 			example: 'Trabaje',
 		},
 		// TODO: Data source currently missing for these tenses.
-<<<<<<< HEAD
 
 		// {
 		// 	category: 'Subjunctive',
-=======
-		// {
-		// 	category: 'subjunctive',
->>>>>>> 6b25ea3... Styling in progress - pushing for end of day
 		// 	tense: 'subjunctive-imperfect',
 		// 	name: 'Imperfect',
 		// 	selected: false,
 		// 	example: 'Trabajara',
 		// },
 		// {
-<<<<<<< HEAD
 		// 	category: 'Subjunctive',
-=======
-		// 	category: 'subjunctive',
->>>>>>> 6b25ea3... Styling in progress - pushing for end of day
 		// 	tense: 'subjunctive-future',
 		// 	name: 'Future',
 		// 	selected: false,
 		// 	example: 'Trabajare',
 		// },
 		{
-<<<<<<< HEAD
+			id: '7',
 			category: 'Imperative',
-=======
-			category: 'imperative',
->>>>>>> 6b25ea3... Styling in progress - pushing for end of day
-			tense: 'imperative-affirmative',
+			tense: 'Imperative Affirmative',
+			tenseESP: 'Imperativo Afirmativo',
 			name: 'Affirmative',
+			nameESP: 'Afirmativo',
 			selected: false,
 			example: '¡Habla!',
 		},
 		{
+			id: '8',
 			category: 'Imperative',
-			tense: 'imperative-negative',
+			tense: 'Imperative Negative',
+			tenseESP: 'Imperativo Negativo',
 			name: 'Negative',
+			nameESP: 'Negativo',
 			selected: false,
 			example: '¡Habla!',
 		},
 		{
+			id: '9',
 			category: 'Continuous',
-			tense: 'continuous-present',
+			tense: 'Continuous Present',
+			tenseESP: 'Continous Presente',
 			name: 'Present',
+			nameESP: 'Presente',
 			selected: false,
 			example: 'Estoy mirando',
 		},
 		{
+			id: '10',
 			category: 'Perfect',
-			tense: 'perfect-present',
+			tense: 'Perfect Present',
+			tenseESP: 'Presente Perfecto',
 			name: 'Present',
+			nameESP: 'Presente',
 			selected: false,
 			example: 'He jugado',
 		},
 		{
+			id: '11',
 			category: 'Perfect',
-			tense: 'perfect-past',
+			tense: 'Perfect Past',
+			tenseESP: 'Pasado Perfecto',
 			name: 'Past',
+			nameESP: 'Pasado',
 			selected: false,
 			example: 'Había jugado',
 		},
 		{
+			id: '12',
 			category: 'Perfect',
-			tense: 'perfect-conditional',
+			tense: 'Perfect Conditional',
+			tenseESP: 'Condicional Perfecto',
 			name: 'Conditional',
+			nameESP: 'Condicional',
 			selected: false,
 			example: 'Habría jugado',
 		},
 		{
+			id: '13',
 			category: 'Perfect',
-			tense: 'perfect-future',
+			tense: 'Perfect Future',
+			tenseESP: 'Futuro Perfecto',
 			name: 'Future',
+			nameESP: 'Futuro',
 			selected: false,
 			example: 'Habré jugado',
 		},
 	],
 	pronouns: [
 		{
+			id: '1',
 			pronoun: 'yo',
 			name: 'Yo',
 			selected: true,
 		},
 		{
+			id: '2',
 			pronoun: 'tu',
 			name: 'Tú',
 			selected: true,
 		},
 		{
+			id: '3',
 			pronoun: 'el',
 			name: 'Él, Ella, Ud.',
 			selected: true,
 		},
 		{
+			id: '4',
 			pronoun: 'nosotros',
 			name: 'Nosotros',
 			selected: true,
 		},
 		{
+			id: '5',
 			pronoun: 'vosotros',
 			name: 'Vosotros',
 			selected: true,
 		},
 		{
+			id: '6',
 			pronoun: 'ellos',
 			name: 'Ellos, Ellas, Uds.',
 			selected: true,
@@ -182,6 +215,11 @@ const initialState = {
 
 const rootReducer = (state = initialState, action) => {
 	switch (action.type) {
+		case actionTypes.SET_DISPLAY_LANGUAGE:
+			return {
+				...state,
+				displayLanguage: action.language,
+			};
 		case actionTypes.TOGGLE_TENSE:
 			return {
 				...state,

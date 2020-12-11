@@ -9,7 +9,7 @@ import {
 	setCurrentQuestion,
 	setErrors,
 } from '../../actions';
-
+import checkAccentError from '../../utils/checkAccentError';
 import ProgressBar from '../ProgressBar/ProgressBar';
 import incorrectIcon from '../../resources/incorrect-icon.png';
 import correctIcon from '../../resources/correct-icon.png';
@@ -18,12 +18,14 @@ import warningIcon from '../../resources/exclamation.png';
 import './Game.css';
 
 export default function Game() {
+	const displayLanguage = useSelector((state) => state.displayLanguage);
 	const questionList = useSelector((state) => state.questionList);
 	const currentQuestion = useSelector((state) => state.currentQuestion);
 	const targetScore = useSelector((state) => state.targetScore);
 	const currentScore = useSelector((state) => state.score);
 	const answerList = useSelector((state) => state.answerList);
 	const userAnswer = useSelector((state) => state.userAnswer);
+	const selectedTenses = useSelector((state) => state.tenses);
 	const selectedPronouns = useSelector((state) => state.pronouns);
 	const errors = useSelector((state) => state.errors);
 	const dispatch = useDispatch();
@@ -58,7 +60,9 @@ export default function Game() {
 				const userAnswerLowerCase = userAnswer.toLowerCase();
 
 				// Add to the list of answers. This will be used to review performance later.
-				dispatch(setAnswerList([...answerList, {answer: userAnswerLowerCase}]));
+				dispatch(
+					setAnswerList([...answerList, { answer: userAnswerLowerCase }])
+				);
 
 				// Check whether the answer is correct
 				if (currentQuestion.answers.includes(userAnswerLowerCase)) {
@@ -66,9 +70,10 @@ export default function Game() {
 					setValidation('correct');
 					dispatch(setScore(currentScore + 1));
 				} else {
-					if (checkAccentError(userAnswerLowerCase)) {
+					if (checkAccentError(currentQuestion.answers, userAnswerLowerCase)) {
 						// Give positive feedback with warning about accents, and increase the score.
 						setValidation('correct-with-issue');
+						dispatch(setScore(currentScore + 1));
 					} else {
 						// The answer is incorrect. Give negative feedback.
 						setValidation('incorrect');
@@ -87,34 +92,12 @@ export default function Game() {
 			} else {
 				// Generate a new question.
 				generateNextQuestion();
-				
-				window.setTimeout(function () { 
-					document.getElementById('answer-input').focus(); 
-				}, 0); 
+
+				window.setTimeout(function () {
+					document.getElementById('answer-input').focus();
+				}, 0);
 			}
 		}
-	}
-
-	// A function to check if the user's answer has a missing and/or extra accent, but is otherwise correct.
-	function checkAccentError(answer) {
-		let accentError = false;
-
-		// Format the user's answer and the question answer(s) to remove accents.
-		const formattedUserAnswer = answer
-			.normalize('NFD')
-			.replace(/[\u0300-\u036f]/g, '');
-		const formattedQuestionAnswers = [];
-		currentQuestion.answers.forEach((answer) => {
-			formattedQuestionAnswers.push(
-				answer.normalize('NFD').replace(/[\u0300-\u036f]/g, '')
-			);
-		});
-
-		if (formattedQuestionAnswers.includes(formattedUserAnswer)) {
-			accentError = true;
-		}
-
-		return accentError;
 	}
 
 	function generateNextQuestion() {
@@ -150,8 +133,6 @@ export default function Game() {
 		let formErrors = {};
 		let formIsValid = true;
 
-		console.log(userAnswer);
-
 		if (userAnswer === '') {
 			formIsValid = false;
 			formErrors['answer-input'] = 'Please enter an answer.';
@@ -168,11 +149,19 @@ export default function Game() {
 		}
 	};
 
-	// A function to capitalise the first letter of each word. Used for the tense and pronoun of the current question.
-	function capitaliseString(string) {
-		return string.replace(/\w\S*/g, function (txt) {
-			return txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase();
-		});
+	// A method to change the button text when the display language changes.
+	function renderButtonText() {
+		if (displayLanguage === 'ENG') {
+			if (buttonText !== 'SUBMIT') {
+				return 'CONTINUE';
+			}
+			return 'SUBMIT';
+		} else {
+			if (buttonText !== 'SUBMIT') {
+				return 'CONTINUAR';
+			}
+			return 'ENVIAR';
+		}
 	}
 
 	return (
@@ -183,7 +172,16 @@ export default function Game() {
 						id="btn-previous"
 						type="image"
 						src={previousIcon}
-						onClick={handleBackClick}
+						onClick={() => {
+							if (
+								window.confirm(
+									displayLanguage === 'ENG'
+										? 'Are you sure you wish to exit the game?'
+										: '¿Estás seguro de que quieres terminar el juego?'
+								)
+							)
+								handleBackClick();
+						}}
 						alt="Quit game"
 					/>
 				</div>
@@ -196,20 +194,53 @@ export default function Game() {
 			</div>
 
 			<div className="game-section">
-				<p className="section-title">Conjugate the following verb:</p>
+				<p className="section-title">
+					{displayLanguage === 'ENG'
+						? 'Conjugate the following verb:'
+						: 'Conjugar el siguiente verbo:'}
+				</p>
 				<p id="verb">
 					<p id="spanish-verb">{currentQuestion.spanishVerb}</p>
 					<p id="english-verb">({currentQuestion.englishVerb})</p>
 				</p>
 				<div className="question-container">
 					<div className="tense-pronoun">
-						<p><span className="left-span"><strong>Tense: </strong></span><span className="right-span">{capitaliseString(currentQuestion.tense.replace(/-/g, ' '))}</span></p>
-						<p><span className="left-span"><strong>Pronoun: </strong></span><span className="right-span">{selectedPronouns.filter((pronoun) => pronoun.pronoun === currentQuestion.pronoun)[0].name}</span></p>	
-									
+						<p>
+							<span className="left-span">
+								<strong>
+									{displayLanguage === 'ENG' ? 'Tense: ' : 'Tenso:'}
+								</strong>
+							</span>
+							<span className="right-span">
+								{displayLanguage === 'ENG'
+									? currentQuestion.tense
+									: selectedTenses.filter(
+											(tense) => tense.tense === currentQuestion.tense
+									  )[0].tenseESP}
+							</span>
+						</p>
+						<p>
+							<span className="left-span">
+								<strong>
+									{displayLanguage === 'ENG' ? 'Pronoun: ' : 'Pronombre: '}
+								</strong>
+							</span>
+							<span className="right-span">
+								{
+									selectedPronouns.filter(
+										(pronoun) => pronoun.pronoun === currentQuestion.pronoun
+									)[0].name
+								}
+							</span>
+						</p>
 					</div>
 					{errors['answer-input'] !== undefined && (
 						<div className="validation-message centered">
-							<img class="warning-image" src={warningIcon} alt="warning"></img>
+							<img
+								className="warning-image"
+								src={warningIcon}
+								alt="warning"
+							></img>
 							<span>{errors['answer-input']}</span>
 						</div>
 					)}
@@ -223,7 +254,11 @@ export default function Game() {
 					/>
 					<div className="special-characters">
 						{specialCharacters.map((character) => (
-							<button onClick={specialCharacterClick} value={character}>
+							<button
+								onClick={specialCharacterClick}
+								value={character}
+								disabled={buttonText === 'CONTINUE'}
+							>
 								{character}
 							</button>
 						))}
@@ -235,14 +270,16 @@ export default function Game() {
 					<div className="correct answer-validation">
 						<div className="validation-image">
 							<img
-								class="corect-image"
+								className="corect-image"
 								src={correctIcon}
 								alt="Correct icon."
 							></img>
 						</div>
 						<div className="validation-comment">
-							<p className="feedback-header">Correct!</p>
-							<p> Well done!</p>
+							<p className="feedback-header">
+								{displayLanguage === 'ENG' ? 'Correct!' : '¡Correcto!'}
+							</p>
+							<p>{displayLanguage === 'ENG' ? 'Well done!' : '¡Bien hecho!'}</p>
 						</div>
 					</div>
 				)}
@@ -250,16 +287,23 @@ export default function Game() {
 					<div className="correct-with-issue answer-validation">
 						<div className="validation-image">
 							<img
-								class="corect-image"
+								className="corect-image"
 								src={correctIcon}
 								alt="Correct icon."
 							></img>
 						</div>
 						<div className="validation-comment">
 							<p className="feedback-header">
-								Correct, but please pay attention to accents!
+								{displayLanguage === 'ENG'
+									? 'Correct, but please pay attention to accents!'
+									: '¡Correcto, pero por favor preste atención a los acentos!'}
 							</p>
-							<p>Correct solution: {currentQuestion.answers[0]}</p>
+							<p>
+								{displayLanguage === 'ENG'
+									? 'Correct solution(s):'
+									: 'Solucion(es) correcta(s):'}{' '}
+								{currentQuestion.answers.join(', ')}
+							</p>
 						</div>
 					</div>
 				)}
@@ -267,21 +311,25 @@ export default function Game() {
 					<div className="incorrect answer-validation">
 						<div className="validation-image">
 							<img
-								class="incorect-image"
+								className="incorect-image"
 								src={incorrectIcon}
 								alt="Incorrect icon."
 							></img>
 						</div>
 						<div className="validation-comment">
-							<p className="feedback-header">Correct solution:</p>
-							<p>{currentQuestion.answers[0]}</p>
+							<p className="feedback-header">
+								{displayLanguage === 'ENG'
+									? 'Correct solution(s):'
+									: 'Solucion(es) correcta(s):'}
+							</p>
+							<p>{currentQuestion.answers.join(', ')}</p>
 						</div>
 					</div>
 				)}
 			</div>
 			<div className="button-section">
 				<button type="submit" id="btn-submit" onMouseDown={handleClick}>
-					{buttonText}
+					{renderButtonText()}
 				</button>
 			</div>
 		</div>

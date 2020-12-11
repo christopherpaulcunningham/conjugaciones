@@ -12,7 +12,8 @@ import {
 	setCurrentQuestion,
 	setTargetScore,
 	setErrors,
-	setUserAnswer
+	setUserAnswer,
+	setAnswerList,
 } from '../../actions';
 import generateQuestionList from '../../utils/generateQuestionList';
 import PronounItem from '../PronounItem/PronounItem';
@@ -20,12 +21,12 @@ import warning from '../../resources/exclamation.png';
 import './VerbSettings.css';
 
 export default function VerbSettings() {
+	const displayLanguage = useSelector((state) => state.displayLanguage);
 	const tenses = useSelector((state) => state.tenses);
 	const pronouns = useSelector((state) => state.pronouns);
 	const verbSettings = useSelector((state) => state.verbSettings);
 	const targetScore = useSelector((state) => state.targetScore);
 	const errors = useSelector((state) => state.errors);
-
 	const dispatch = useDispatch();
 	const history = useHistory();
 
@@ -71,8 +72,12 @@ export default function VerbSettings() {
 
 	function setUpGame() {
 		setTimeout(() => {
+			let questionList = [];
+			// Reset the state of the game.
+			resetGameState();
+
 			// Generate a list of questions.
-			const questionList = generateQuestionList(
+			questionList = generateQuestionList(
 				tenses,
 				pronouns,
 				verbSettings,
@@ -93,13 +98,10 @@ export default function VerbSettings() {
 					1,
 					initialQuestion.verb,
 					initialQuestion.tense,
-					initialQuestion.pronoun, 
+					initialQuestion.pronoun,
 					initialQuestion.answers
 				)
 			);
-
-			// Clear the user answer, incase the user has played previously.
-			dispatch(setUserAnswer(''));
 
 			//Start the game.
 			dispatch(toggleCurrentlyPlaying());
@@ -107,17 +109,29 @@ export default function VerbSettings() {
 		}, 1000);
 	}
 
+	// A method to reset the state of a number of fields to start the game with a clean state.
+	function resetGameState() {
+		dispatch(setUserAnswer(''));
+		dispatch(setAnswerList([]));
+	}
+
 	return (
 		<div className="settings-container">
-			<div className="settings-title">Additional Settings</div>
+			<div className="settings-title">
+				{displayLanguage === 'ENG'
+					? 'Additional Settings'
+					: 'Ajustes Adicionales'}
+			</div>
 			<div className="section">
 				{errors['pronouns'] !== undefined && (
 					<div className="validation-message">
-						<img class="warning-image" src={warning} alt="warning"></img>
+						<img className="warning-image" src={warning} alt="warning"></img>
 						<span>{errors['pronouns']}</span>
 					</div>
 				)}
-				<span className="section-header">Pronouns</span>
+				<span className="section-header">
+					{displayLanguage === 'ENG' ? 'Pronouns' : 'Pronombres'}
+				</span>
 				<div className="settings-section pronoun-section">
 					{pronouns.map((pronoun) => (
 						<PronounItem
@@ -129,9 +143,15 @@ export default function VerbSettings() {
 						/>
 					))}
 				</div>
-				<span className="section-header">Verb Types</span>
+				<span className="section-header">
+					{displayLanguage === 'ENG' ? 'Verb Types' : 'Tipos de Verbos'}
+				</span>
 				<div className="settings-section">
-					<span>Irregular Verbs</span>
+					<span>
+						{displayLanguage === 'ENG'
+							? 'Irregular Verbs'
+							: 'Verbos Irregulares'}
+					</span>
 					<div className="button-group">
 						<input
 							type="radio"
@@ -143,7 +163,7 @@ export default function VerbSettings() {
 							htmlFor="irregular-include"
 							onClick={() => dispatch(setIrregularVerbs('INCLUDE'))}
 						>
-							INCLUDE
+							{displayLanguage === 'ENG' ? 'Include' : 'Incluir'}
 						</label>
 						<input
 							type="radio"
@@ -155,12 +175,16 @@ export default function VerbSettings() {
 							htmlFor="irregular-exclude"
 							onClick={() => dispatch(setIrregularVerbs('EXCLUDE'))}
 						>
-							EXCLUDE
+							{displayLanguage === 'ENG' ? 'Exclude' : 'Excluir'}
 						</label>
 					</div>
 				</div>
 				<div className="settings-section">
-					<span>Reflexive Verbs</span>
+					<span>
+						{displayLanguage === 'ENG'
+							? 'Reflexive Verbs'
+							: 'Verbos Reflexivos'}
+					</span>
 					<div className="button-group">
 						<input
 							type="radio"
@@ -172,7 +196,7 @@ export default function VerbSettings() {
 							htmlFor="reflexive-include"
 							onClick={() => dispatch(setReflexiveVerbs('INCLUDE'))}
 						>
-							INCLUDE
+							{displayLanguage === 'ENG' ? 'Include' : 'Incluir'}
 						</label>
 						<input
 							type="radio"
@@ -184,12 +208,16 @@ export default function VerbSettings() {
 							htmlFor="reflexive-exclude"
 							onClick={() => dispatch(setReflexiveVerbs('EXCLUDE'))}
 						>
-							EXCLUDE
+							{displayLanguage === 'ENG' ? 'Exclude' : 'Excluir'}
 						</label>
 					</div>
 				</div>
 				<div className="settings-section">
-					<span>Verbs To Use</span>
+					<span>
+						{displayLanguage === 'ENG'
+							? 'Which verbs do you wish to use?'
+							: '¿Qué verbos quieres incluir?'}
+					</span>
 					<div className="button-group">
 						<input
 							type="radio"
@@ -201,7 +229,7 @@ export default function VerbSettings() {
 							htmlFor="verbs-all"
 							onClick={() => dispatch(setSelectedVerbs('ALL'))}
 						>
-							ALL
+							{displayLanguage === 'ENG' ? 'All' : 'Todos'}
 						</label>
 						<input
 							type="radio"
@@ -213,7 +241,7 @@ export default function VerbSettings() {
 							htmlFor="verbs-common"
 							onClick={() => dispatch(setSelectedVerbs('COMMON'))}
 						>
-							COMMON
+							{displayLanguage === 'ENG' ? 'Common' : 'Común'}
 						</label>
 						<input
 							type="radio"
@@ -225,34 +253,44 @@ export default function VerbSettings() {
 							htmlFor="verbs-user-defined"
 							onClick={() => dispatch(setSelectedVerbs('USER_DEFINED'))}
 						>
-							CUSTOM
+							{displayLanguage === 'ENG' ? 'Custom' : 'Elige'}
 						</label>
 					</div>
 					{verbSettings.selectedVerbs === 'USER_DEFINED' && (
 						<div>
 							{errors['custom-verbs'] !== undefined && (
 								<div className="validation-message">
-									<img class="warning-image" src={warning} alt="warning"></img>
+									<img
+										className="warning-image"
+										src={warning}
+										alt="warning"
+									></img>
 									<span>{errors['custom-verbs']}</span>
 								</div>
 							)}
-							<input
+							<textarea
 								id="custom-verbs"
+								rows="3"
 								value={verbSettings.userDefinedVerbs}
 								onChange={(evt) =>
 									dispatch(setUserDefinedVerbs(evt.target.value))
 								}
-								placeholder="Enter some verbs followed by a comma. e.g. estar, ver, hablar"
-							></input>
+								placeholder={
+									displayLanguage === 'ENG'
+										? 'Enter some verbs followed by a comma - e.g. estar, ver, hablar.'
+										: 'Introduzca algunos verbos seguidos de una coma - p. ej. estar, ver, hablar.'
+								}
+							></textarea>
 						</div>
 					)}
 					<div className="button-section">
-<<<<<<< HEAD
-						<button type="submit" id="btn-start" className="no-select" onClick={handleSubmitClick}>
-=======
-						<button type="submit" id="btn-start" onClick={handleSubmitClick}>
->>>>>>> 6b25ea3... Styling in progress - pushing for end of day
-							START
+						<button
+							type="submit"
+							id="btn-start"
+							className="no-select"
+							onClick={handleSubmitClick}
+						>
+							{displayLanguage === 'ENG' ? 'START' : 'INICIO'}
 						</button>
 					</div>
 				</div>

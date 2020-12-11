@@ -1,17 +1,16 @@
-.footer{    
-    background-color: #ff8800;
-    bottom: 0;
-    display: block;
-    height: 4em;
-    justify-content: middle;
-    position: absolute;  
-    text-align: center;
-    width: 100%;
+.footer {
+	background-color: #ff8800;
+	bottom: 0;
+	display: block;
+	height: 4em;
+	justify-content: middle;
+	position: absolute;
+	text-align: center;
+	width: 100%;
 }
 
-#copyright{
-    color: #ffffff;
-    font-weight: 300;
-    padding-top: 1em;
+#copyright {
+	color: #ffffff;
+	font-weight: 300;
+	padding-top: 1em;
 }
-

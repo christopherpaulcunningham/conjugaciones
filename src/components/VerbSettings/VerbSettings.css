@@ -12,14 +12,6 @@
 	margin: 0.4em 0 1em 0;
 }
 
-/* .pronoun-section {
-    display: flex;
-    flex-direction: row;
-}
-.pronoun-section div {
-    width: 50%;
-} */
-
 .settings-section-left {
 	width: 30%;
 	float: left;
@@ -40,14 +32,8 @@ button:hover {
 
 .button-group label {
 	align-items: center;
-<<<<<<< HEAD
 	border-top: 1px solid #c9c5c1;
 	border-bottom: 1px solid #c9c5c1;
-=======
-	border-top: 1px solid #fd951d;
-	border-bottom: 1px solid #fd951d;
->>>>>>> 6b25ea3... Styling in progress - pushing for end of day
-	/* color: #FD951D; */
 	display: inline-flex;
 	font-weight: 500;
 	height: 1.5em;
@@ -58,47 +44,25 @@ button:hover {
 
 .button-left {
 	border-radius: 5px 0px 0 5px;
-<<<<<<< HEAD
 	border-left: 1px solid #c9c5c1;
 	border-right: 0.5px solid #c9c5c1;
-}
-.button-middle {
-	/* border-right: 1px solid #c9c5c1;
-    border-left: 1px solid #c9c5c1; */
-=======
-	border-left: 1px solid #fd951d;
-	border-right: 2px solid #fd951d;
-}
-.button-middle {
-	/* border-right: 1px solid #FD951D;
-    border-left: 1px solid #FD951D; */
->>>>>>> 6b25ea3... Styling in progress - pushing for end of day
 }
 
 .button-right {
 	border-radius: 0px 5px 5px 0px;
-<<<<<<< HEAD
 	border-left: 0.5px solid #c9c5c1;
 	border-right: 1px solid #c9c5c1;
-=======
-	border-left: 1px solid #fd951d;
-	border-right: 1px solid #fd951d;
->>>>>>> 6b25ea3... Styling in progress - pushing for end of day
 }
 
 .button-group input:checked + label,
 .button-group input:checked + label:active {
 	border-color: #fd951d;
 	background-color: #fd951d;
-<<<<<<< HEAD
 	color: #ffffff;
-
-	/* box-shadow: inset 1px 1px 10px #db811a; */
 }
 
 .button-group input:checked + label:hover {
 	background-color: #faae56;
-	/* box-shadow: inset 1px 1px 10px #ce7918; */
 }
 .button-group label:hover {
 	background-color: #fdebd7;
@@ -112,7 +76,7 @@ button:hover {
 	background-color: #98c24e;
 	border: none;
 	border-radius: 8px;
-    color: #ffffff;
+	color: #ffffff;
 	float: right;
 	font-size: 90%;
 	font-weight: 700;
@@ -135,38 +99,9 @@ button:hover {
 }
 
 #custom-verbs {
-=======
-    color: #ffffff;
-
-    box-shadow: inset 1px 1px 10px #db811a;
-}
-
-.button-group input:checked + label:hover {
-    background-color: #faae56;
-    box-shadow: inset 1px 1px 10px #ce7918;
-}
-.button-group label:hover {
-	background-color: #fdebd7;
-}
-
-.button-section {
-	float: right;
-}
-
-#btn-start {
-	background-color: #12b674;
-	border-radius: 5px;
-	color: #ffffff;
-	font-weight: 600;
-	margin-top: 1em;
-	height: 2.5em;
-	width: 8em;
-}
-
-#custom-verbs {
-	/* margin-top: 1em; */
->>>>>>> 6b25ea3... Styling in progress - pushing for end of day
-	height: 4em;
+	font-family: 'Courier New', cursive;
+	height: 2rem;
+	resize: none;
 	width: 100%;
 }
 

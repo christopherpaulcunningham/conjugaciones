@@ -1,0 +1,34 @@
+.review-performance {
+	display: flex;
+	border-radius: 10px;
+	padding: 0.5rem;
+}
+
+.review-image {
+	vertical-align: middle;
+}
+
+.review-image img {
+	height: 2.5rem;
+	width: 2.5rem;
+}
+
+#review-question {
+	display: inline;
+	margin: 0rem 1.5rem;
+	text-align: left;
+}
+
+.question-answers {
+	margin-left: 1.1rem;
+}
+
+.review-correct-answer {
+	background-color: #bcf063;
+	color: #446b00;
+}
+
+.review-incorrect-answer {
+	background-color: #f8baba;
+	color: #e60101;
+}

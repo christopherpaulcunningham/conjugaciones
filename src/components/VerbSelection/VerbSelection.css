@@ -19,13 +19,9 @@ p {
 	align-items: center;
 	background-color: #ffffff;
 	border-radius: 1.5em;
-<<<<<<< HEAD
+	min-height: 26rem;
 	margin: auto;
 	overflow: hidden;
-=======
-	height: 28em;
-	margin: auto;
->>>>>>> 6b25ea3... Styling in progress - pushing for end of day
 	padding: 1em;
 	width: 85%;
 
@@ -35,12 +31,12 @@ p {
 }
 
 .section-header {
-    font-weight: 500;
-    margin-bottom: 0.5em;
+	font-weight: 500;
+	margin-bottom: 0.5em;
 }
 
-.options-section{
-    margin-bottom: 1em;
+.options-section {
+	margin-bottom: 1em;
 }
 
 .left-section {
@@ -52,15 +48,3 @@ p {
 	float: right;
 	width: 49%;
 }
-
-<<<<<<< HEAD
-
-=======
-.validation-message {
-	color: #ff0000;
-	font-size: 0.8em;
-	height: 0.5em;
-	margin: 0.5em 0;
-	text-align: left;
-}
->>>>>>> 6b25ea3... Styling in progress - pushing for end of day
