@@ -1,10 +1,19 @@
 .game-container {
+<<<<<<< HEAD
 	background-color: #ffffff;
 	border-radius: 1.5rem;
 	margin: auto;
 	overflow: hidden;
 	padding: 1rem;
 	width: 70%;
+=======
+    
+	background-color: #ffffff;
+	border-radius: 1.5em;
+    margin: auto;
+    padding: 1em 1em 2em 1em;
+    width:70%;
+>>>>>>> 6b25ea3... Styling in progress - pushing for end of day
 }
 
 .nav-button {

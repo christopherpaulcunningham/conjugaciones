@@ -247,7 +247,11 @@ export default function VerbSettings() {
 						</div>
 					)}
 					<div className="button-section">
+<<<<<<< HEAD
 						<button type="submit" id="btn-start" className="no-select" onClick={handleSubmitClick}>
+=======
+						<button type="submit" id="btn-start" onClick={handleSubmitClick}>
+>>>>>>> 6b25ea3... Styling in progress - pushing for end of day
 							START
 						</button>
 					</div>

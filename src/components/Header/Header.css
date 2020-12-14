@@ -1,8 +1,18 @@
+<<<<<<< HEAD
 .header {
 	align-items: center;
 	color: #ffffff;
 	display: flex;
 	height: 5em;
+=======
+.header{
+    align-items: center;
+	/* background-color: #ffffff; */
+	/* color: #b11409; */
+	color: #ffffff;
+    display: flex;
+    height: 5em;
+>>>>>>> 6b25ea3... Styling in progress - pushing for end of day
 	justify-content: space-between;
 	width: 100%;
 }
@@ -29,4 +39,11 @@
 	color: #ffffff;
 	padding: 10px 15px;
 	text-decoration: none;
+<<<<<<< HEAD
 }
+=======
+	color: #ffffff;
+	/* color: #b11409; */
+	text-decoration: none;
+}
+>>>>>>> 6b25ea3... Styling in progress - pushing for end of day
