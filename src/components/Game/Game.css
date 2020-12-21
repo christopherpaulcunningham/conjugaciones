@@ -43,29 +43,29 @@
 }
 #spanish-verb {
 	font-size: 1.2rem;
-    font-weight: 600;
-    margin-bottom: 0.3rem;
+	font-weight: 600;
+	margin-bottom: 0.3rem;
 }
 #english-verb {
-    font-size: 0.9rem;
+	font-size: 0.9rem;
 }
 
 .tense-pronoun {
-    margin: 1rem auto;
-    width: 100%
+	margin: 1rem auto;
+	width: 100%;
 }
 
 .tense-pronoun span {
-    display: inline-block;    
+	display: inline-block;
 }
-.left-span{
-    text-align: left;
-    width: 5rem;
+.left-span {
+	text-align: right;
+	width: 6rem;
 }
-.right-span{
-    margin-left: 0.5rem;
-    text-align: left;
-    width: 10rem;
+.right-span {
+	margin-left: 0.5rem;
+	text-align: left;
+	width: 10rem;
 }
 #tense-pronoun {
 	margin-bottom: 1rem;
@@ -78,6 +78,8 @@
 
 #answer-input {
 	margin: 0rem 0 1rem 0;
+	padding: 0.3rem;
+	width: 30%;
 }
 
 .special-characters button {
@@ -111,7 +113,8 @@
 	margin-bottom: 0.3rem;
 }
 
-.correct, .correct-with-issue {
+.correct,
+.correct-with-issue {
 	background-color: #bcf063;
 	color: #446b00;
 	width: 100%;
@@ -123,10 +126,8 @@
 	width: 100%;
 }
 
-
-
 .centered {
-    text-align: center;
+	text-align: center;
 }
 
 .validation-image {
@@ -158,7 +159,6 @@
 	font-size: 90%;
 	font-weight: 700;
 	height: 2.5rem;
-	/* margin-top: 1rem; */
 	text-decoration: none;
 	user-select: none;
 	width: 10rem;

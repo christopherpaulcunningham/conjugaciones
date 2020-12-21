@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat&family=Work+Sans&display=swap');
+
 .container {
 	background: #ab0156;
 	background: linear-gradient(45deg, #ab0156 0%, #ff8800 85%);
@@ -15,20 +17,7 @@
 	height: 3em;
 }
 
-.validation-message {
-	color: #ff0000;
-	font-size: 0.8em;
-	height: 0.5em;
-	margin-bottom: 1.5em;
-	text-align: left;
-}
 
-.warning-image {
-	height: 1.5em;
-	margin-right: 0.7em;
-	vertical-align: middle;
-	width: 1.5em;
-}
 
 .wave-divider {
 	overflow: hidden;

@@ -1,5 +1,5 @@
 import { verbOptions } from '../actions';
-import shuffleArray from "./shuffleArray";
+import shuffleArray from './shuffleArray';
 import VERB_DATA from '../data/data';
 
 export default function generateQuestion(tenses, pronouns, verbSettings) {
@@ -7,18 +7,22 @@ export default function generateQuestion(tenses, pronouns, verbSettings) {
 	const randomVerb = generateVerb(VERB_DATA, verbSettings);
 
 	// Select a random tense from those chosen.
-	const selectedTenses = shuffleArray(tenses).filter(tense => tense.selected);
-	const randomTense = selectedTenses[Math.floor(Math.random() * selectedTenses.length)];
+	const selectedTenses = shuffleArray(tenses).filter((tense) => tense.selected);
+	const randomTense =
+		selectedTenses[Math.floor(Math.random() * selectedTenses.length)];
 
 	// Select a random pronoun from those chosen.
-	const selectedPronouns = shuffleArray(pronouns).filter(pronoun => pronoun.selected);
-	const randomPronoun = selectedPronouns[Math.floor(Math.random() * selectedPronouns.length)];
+	const selectedPronouns = shuffleArray(pronouns).filter(
+		(pronoun) => pronoun.selected
+	);
+	const randomPronoun =
+		selectedPronouns[Math.floor(Math.random() * selectedPronouns.length)];
 
 	const generatedQuestion = {
 		verb: randomVerb,
 		tense: randomTense.tense,
-		pronoun: randomPronoun.pronoun
-	}
+		pronoun: randomPronoun.pronoun,
+	};
 
 	return generatedQuestion;
 }
@@ -45,5 +49,7 @@ function generateVerb(verbArray, verbSettings) {
 	}
 
 	// Shuffle the array of verbs and return a random verb.
-	return shuffleArray(verbsInPlay)[Math.floor(Math.random() * verbsInPlay.length)];
+	return shuffleArray(verbsInPlay)[
+		Math.floor(Math.random() * verbsInPlay.length)
+	];
 }

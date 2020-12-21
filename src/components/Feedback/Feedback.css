@@ -1,8 +1,8 @@
 .feedback-container {
-    background-color: #ffffff;
-    border-radius: 1.5em;
+	background-color: #ffffff;
+	border-radius: 1.5em;
 	margin: auto;
-    overflow: hidden;
+	overflow: hidden;
 	padding: 1em;
 	width: 70%;
 }
@@ -16,7 +16,7 @@
 }
 
 /* QUESTIONS */
-.review-question{
+.review-question {
 	margin: 0.5em auto;
 	width: 80%;
 }

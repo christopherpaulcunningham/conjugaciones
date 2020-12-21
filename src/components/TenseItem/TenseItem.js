@@ -1,18 +1,26 @@
-import React from "react";
-import "./TenseItem.css";
+import React from 'react';
+import { useSelector } from 'react-redux';
+import './TenseItem.css';
 
 export default function TenseItem(props) {
+	const displayLanguage = useSelector((state) => state.displayLanguage);
+
+	console.log(props.id);
 	return (
 		<div>
-			<input type="checkbox" defaultChecked={props.selected} onChange={props.onClick}/>
-			<label htmlFor={props.id} >{props.name}</label>
+			<label className="checkbox-container">
+				{displayLanguage === 'ENG' ? props.name : props.nameESP}
+				<input
+					type="checkbox"
+					defaultChecked={props.selected}
+					onChange={props.onClick}
+				/>
+				<span className="checkmark"></span>
+			</label>
 			<div className="example">
-				e.g. {props.example}
+				{displayLanguage === 'ENG' ? 'e.g. ' : 'p. ej. '}
+				{props.example}
 			</div>
-			{/* <div className="tooltip">
-				<label htmlFor={props.id} >{props.name}</label>
-				<span className="tooltiptext">{props.example}</span>
-			</div> */}
 		</div>
 	);
 }

@@ -19,6 +19,7 @@ p {
 	align-items: center;
 	background-color: #ffffff;
 	border-radius: 1.5em;
+	min-height: 26rem;
 	margin: auto;
 	overflow: hidden;
 	padding: 1em;
@@ -30,12 +31,12 @@ p {
 }
 
 .section-header {
-    font-weight: 500;
-    margin-bottom: 0.5em;
+	font-weight: 500;
+	margin-bottom: 0.5em;
 }
 
-.options-section{
-    margin-bottom: 1em;
+.options-section {
+	margin-bottom: 1em;
 }
 
 .left-section {
@@ -47,4 +48,3 @@ p {
 	float: right;
 	width: 49%;
 }
-

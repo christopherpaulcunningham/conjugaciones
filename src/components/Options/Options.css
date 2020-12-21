@@ -1,11 +1,22 @@
 .options-container {
-    /* background-color: #ffffff; */
-    /* border: 1px solid white; */
-    /* border-radius: 0 0 2px 2px; */
-    /* box-shadow: 0 2px 4px 0 hsla(0,0%,0%,0.15); */
 	display: flex;
 	flex-direction: row;
-    justify-content: center;
-    margin: 0 auto 3em;
-    width: 80%;
+	justify-content: center;
+	margin: 0 auto 2em;
+	width: 80%;
+}
+
+.validation-message {
+	color: #ff0000;
+	font-size: 0.8em;
+	height: 0.5em;
+	margin-bottom: 1.5em;
+	text-align: left;
+}
+
+.warning-image {
+	height: 1.5em;
+	margin-right: 0.7em;
+	vertical-align: middle;
+	width: 1.5em;
 }

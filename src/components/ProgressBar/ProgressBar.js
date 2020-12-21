@@ -7,8 +7,8 @@ const Filler = (props) => {
 
 export default function ProgressBar(props) {
 	const currentQuestion = props.currentQuestion.questionNumber;
-    const numQuestions = props.targetScore;
-    const percentage = ((currentQuestion / numQuestions) * 100) - 10;
+	const numQuestions = props.targetScore;
+	const percentage = (currentQuestion / numQuestions) * 100 - 10;
 
 	return (
 		<div className="progress-bar">

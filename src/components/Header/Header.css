@@ -3,30 +3,42 @@
 	color: #ffffff;
 	display: flex;
 	height: 5em;
+	margin: 0rem auto 1rem auto;
 	justify-content: space-between;
-	width: 100%;
+	width: 80%;
 }
 
 .title {
+	display: inline-block;
 	font-size: 2em;
 	font-weight: 500;
-	padding: 0 2em;
 }
 
 .nav-menu {
 	display: flex;
 	list-style: none;
 	justify-content: flex-end;
-	padding-right: 2rem;
 }
 
 .link:hover {
 	color: #dd3b2f;
 }
 
+.home-link {
+	font-family: 'Fredoka One', cursive;
+	font-weight: 500;
+	font-size: 2.5rem;
+}
+
 .link,
 .home-link {
 	color: #ffffff;
-	padding: 10px 15px;
 	text-decoration: none;
+}
+
+.flag {
+	cursor: pointer;
+	height: 2rem;
+	width: 2rem;
+	vertical-align: middle;
 }
