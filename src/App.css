@@ -17,8 +17,6 @@
 	height: 3em;
 }
 
-
-
 .wave-divider {
 	overflow: hidden;
 	position: relative;
@@ -35,4 +33,3 @@
 .wave-divider .shape-fill {
 	fill: #ff8800;
 }
-
