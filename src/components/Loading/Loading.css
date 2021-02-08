@@ -1,0 +1,27 @@
+.loading-container {
+	height: 100%;
+    padding-top: 13rem;
+	width: 100%;
+}
+.loader {
+	margin: 0 auto;
+	width: 3rem;
+}
+.loading-spinner {
+	display: flex;
+}
+.loading-spinner::after {
+	content: '';
+	width: 2rem;
+	height: 2rem;
+	border: 10px solid #f0f6ff;
+	border-top-color: #eb6a00;
+	border-radius: 50%;
+	animation: loading 1s ease infinite;
+}
+
+@keyframes loading {
+	to {
+		transform: rotate(1turn);
+	}
+}

@@ -1,4 +1,4 @@
-import { actionTypes, verbOptions } from '../actions';
+import { actionTypes, verbOptions } from '../actions/types';
 
 const initialState = {
 	displayLanguage: 'ENG',
@@ -63,22 +63,6 @@ const initialState = {
 			selected: false,
 			example: 'Trabaje',
 		},
-		// TODO: Data source currently missing for these tenses.
-
-		// {
-		// 	category: 'Subjunctive',
-		// 	tense: 'subjunctive-imperfect',
-		// 	name: 'Imperfect',
-		// 	selected: false,
-		// 	example: 'Trabajara',
-		// },
-		// {
-		// 	category: 'Subjunctive',
-		// 	tense: 'subjunctive-future',
-		// 	name: 'Future',
-		// 	selected: false,
-		// 	example: 'Trabajare',
-		// },
 		{
 			id: '7',
 			category: 'Imperative',
@@ -211,6 +195,7 @@ const initialState = {
 	},
 	userAnswer: '',
 	errors: [],
+	isLoading: false,
 };
 
 const rootReducer = (state = initialState, action) => {
@@ -300,7 +285,6 @@ const rootReducer = (state = initialState, action) => {
 					tense: action.tense,
 					conjugation: '',
 					answers: action.answers,
-					// answers: action.verb['conjugations'][action.tense][action.pronoun],
 				},
 			};
 		case actionTypes.SET_USER_ANSWER:
@@ -313,6 +297,11 @@ const rootReducer = (state = initialState, action) => {
 				...state,
 				errors: action.errors,
 			};
+		case actionTypes.SET_IS_LOADING:
+			return { 
+				...state,
+				isLoading: !state.isLoading
+			}
 		default:
 			return state;
 	}
