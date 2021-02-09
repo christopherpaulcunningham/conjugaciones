@@ -3,10 +3,11 @@ import './PronounItem.css';
 
 export default function PronounItem(props) {
 	return (
-		<div className="pronoun">
-			<label className="checkbox-container">
+		<div className="pronoun-item-container">
+			<label className="pronoun-item">
 				{props.name}
 				<input
+					className="pronoun-item-checkbox"
 					type="checkbox"
 					defaultChecked={props.selected}
 					onChange={props.onClick}

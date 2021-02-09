@@ -1,4 +1,4 @@
-import { verbOptions } from '../actions';
+import { verbOptions } from '../actions/gameActions';
 import shuffleArray from './shuffleArray';
 import VERB_DATA from '../data/data';
 

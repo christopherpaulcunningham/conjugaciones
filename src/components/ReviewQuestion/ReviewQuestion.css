@@ -1,7 +1,10 @@
 .review-performance {
-	display: flex;
+	display: inline-block;
 	border-radius: 10px;
+	margin: 0.5rem auto;
+	max-width: 500px;
 	padding: 0.5rem;
+	width: 100%;
 }
 
 .review-image {
@@ -9,18 +12,38 @@
 }
 
 .review-image img {
-	height: 2.5rem;
-	width: 2.5rem;
+	height: 1.5rem;
+	width: 1.5rem;
 }
 
 #review-question {
-	display: inline;
-	margin: 0rem 1.5rem;
+	display: flex;
+	margin: 0rem 0.25rem 0 0;
 	text-align: left;
 }
 
+.number-column {
+	font-weight: 600;
+	height: 5rem;
+	margin: 0 0.25rem 0 0;
+}
+.question-column {
+	flex-direction: column;
+}
+.review-question-verb {
+	display: inline-block;
+	font-weight: 600;
+	width: 100%;
+}
+.review-question-tense-pronoun {
+	display: block;	
+	font-size: 0.9rem;
+	margin: 0 0 0.5rem;
+}
+
 .question-answers {
-	margin-left: 1.1rem;
+	display: block;
+	font-size: 0.9rem;
 }
 
 .review-correct-answer {
@@ -31,4 +54,14 @@
 .review-incorrect-answer {
 	background-color: #f8baba;
 	color: #e60101;
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+	.review-performance {
+		margin: 0.5rem 1.5rem;
+		max-width: 400px;
+		padding: 1rem;
+		width: 40%;
+	}
 }

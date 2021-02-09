@@ -1,53 +1,79 @@
 .feedback-container {
 	background-color: #ffffff;
-	border-radius: 1.5em;
-	margin: auto;
+	border: 2px solid #ffb68c;
+	border-radius: 10px;
+	min-height: 40rem;
+	margin: 0 auto 6rem;
+	max-width: 1200px;
 	overflow: hidden;
-	padding: 1em;
-	width: 70%;
-}
-/* SCORE */
-.score-section {
-	font-size: 1.2rem;
-	font-weight: 600;
-	margin: 1rem auto;
+	padding: 1rem;
 	text-align: center;
-	width: 30%;
+	width: 90%;
 }
 
-/* QUESTIONS */
-.review-question {
-	margin: 0.5em auto;
-	width: 80%;
+.loading {	
+	background-color: #ffffff;
+	border-radius: 10px;
+	position: absolute;
+	height: 100%;
+	margin: -1rem;
+	width: 100%;
+	z-index: 10;
 }
 
-/* FINISH BUTTON */
-.button-section {
-	float: right;
-	margin-top: 1rem;
+.score-section {
+	margin: 1rem auto 2rem;
+	padding-top: 1rem;
+}
+.result {
+	display: block;
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin: 1rem auto 0;
+}
+.pass {
+	color: #008000;
+}
+.fail {
+	color: #ff0000;
 }
 
-#btn-finish {
-	background-color: #98c24e;
+.btn-finish {
+	background-color: #139b25;
 	border: none;
-	border-radius: 8px;
+	border-radius: 5px;
 	color: #ffffff;
+	cursor: pointer;
 	float: right;
-	font-size: 90%;
-	font-weight: 700;
-	height: 2.5rem;
-	text-decoration: none;
-	user-select: none;
-	width: 10rem;
+	font-size: 1rem;
+	margin: 1rem 0 0;
+	padding: 0.75rem 1.5rem;
+	/* width: 7rem; */
+}
+.btn-finish:hover {
+	background-color: #0f7c1e;
 }
 
-#btn-finish:active {
-	background-color: #7ea33e;
-	-webkit-box-shadow: 0px 10px 0px 0px #03352152;
-	-moz-box-shadow: 0px 10px 0px 0px #03352152;
-	box-shadow: 0px 0px 10px 0px #03352152;
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	.feedback-container {
+		width: 80%;
+	}
 }
 
-#btn-finish:hover {
-	background-color: #7ea33e;
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.flex-container {
+		width: 100%;
+		text-align: center;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }

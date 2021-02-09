@@ -1,0 +1,36 @@
+.back-button-container {
+    padding: 1rem 0.5rem;
+    /* width: 4rem; */
+}
+
+#btn-previous {
+	height: 1.5rem;
+	width: 1.5rem;
+}
+#btn-previous:hover {
+	opacity: 0.5;
+}
+
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+    .back-button-container {
+        padding: 1rem;
+    }    
+    #btn-previous {
+        height: 2rem;
+        width: 2rem;
+    }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

@@ -1,50 +1,68 @@
-p {
-	margin: 0;
-	padding: 0;
+.selection-container {
+	padding: 0.5rem 1rem;
+	min-height: 30rem;
+	width: 100%;
 }
-
-.settings-container {
-	align-content: center;
-	width: 50%;
-}
-
-.settings-title {
-	color: #ffffff;
-	font-weight: 700;
-	margin-bottom: 1em;
+.selection-header {
+	color: #eb6a00;
+	font-size: 1.1rem;
+	margin: 0.5rem 0;
 	text-align: center;
+	text-decoration: underline;
+	width: 100%;
 }
-
-.section {
-	align-items: center;
-	background-color: #ffffff;
-	border-radius: 1.5em;
-	min-height: 26rem;
-	margin: auto;
-	overflow: hidden;
-	padding: 1em;
-	width: 85%;
-
-	-webkit-box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.42);
-	-moz-box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.42);
-	box-shadow: 3px 3px 5px -1px rgba(0, 0, 0, 0.42);
-}
-
-.section-header {
-	font-weight: 500;
-	margin-bottom: 0.5em;
-}
-
-.options-section {
-	margin-bottom: 1em;
+.selection-error {
+	text-align: center;
 }
 
 .left-section {
 	float: left;
-	width: 49%;
+	width: 40%;
 }
-
 .right-section {
 	float: right;
-	width: 49%;
+	width: 40%;
+}
+
+.selection-section-header {
+	color: #eb6a00;
+	font-weight: 500;
+	margin: 1rem 0 0.5rem;
+}
+
+.options-section {
+	margin: 0 0 1.5rem;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	.left-section,
+	.right-section {
+		padding: 0 1.5rem;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.selection-container {
+		margin: 0 auto;
+		padding: 0.5rem 2rem;
+		width: 50%;
+	}
+
+	.selection-error {
+		text-align: left;
+	}
+	.left-section,
+	.right-section {
+		padding: 0;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
 }

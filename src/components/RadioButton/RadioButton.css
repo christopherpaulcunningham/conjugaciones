@@ -1,0 +1,79 @@
+.radio-container {
+	cursor: pointer;
+	display: inline-block;
+	font-size: 0.925rem;
+	font-weight: 300;
+	margin: 0.5rem 1rem 0.5rem 0;
+	position: relative;
+	padding: 0rem 0 0 1.5rem;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radio-container input {
+	cursor: pointer;
+	opacity: 0;
+	position: absolute;
+}
+
+/* Create a custom radio button */
+.radio-checkmark {
+	background-color: #ffe7d3;
+	border-radius: 50%;
+	height: 1rem;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 1rem;
+}
+.radio-container:hover input ~ .radio-checkmark {
+	background-color: #ffe7d3;
+}
+
+/* When the radio button is checked, add an orange background. */
+.radio-container input:checked ~ .radio-checkmark {
+	background-color: #eb6a00;
+}
+
+/* Indicator. Hidden when not checked. */
+.radio-checkmark:after {
+	content: '';
+	display: none;
+	position: absolute;
+}
+.radio-container .radio-checkmark:after {
+	background: white;
+	border-radius: 50%;
+	height: 0.35rem;
+	left: 0.325rem;
+	top: 0.325rem;
+	width: 0.35rem;
+}
+
+/* Show the indicator when checked */
+.radio-container input:checked ~ .radio-checkmark:after {
+	display: inline-block;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	.radio-container {
+		margin: 0.5rem 2rem 0.5rem 0;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}

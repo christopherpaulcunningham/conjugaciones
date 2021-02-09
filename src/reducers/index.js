@@ -168,7 +168,7 @@ const initialState = {
 		{
 			id: '6',
 			pronoun: 'ellos',
-			name: 'Ellos, Ellas, Uds.',
+			name: 'Ellos/as, Uds.',
 			selected: true,
 		},
 	],
