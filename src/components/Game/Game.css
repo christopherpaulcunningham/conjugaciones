@@ -5,7 +5,6 @@
 	height: auto;
 	margin: 0 auto 6rem;
 	max-width: 1400px;
-	/* min-height: 30.8rem; */
 	overflow: hidden;
 	width: 90%;
 }
@@ -64,13 +63,11 @@
 	text-align: center;
 }
 .left-span {
-	/* border: 1px solid blue; */
 	display: inline-block;
 	text-align: right;
 	width: 6rem;
 }
 .right-span {
-	/* border: 1px solid red; */
 	display: inline-block;
 	margin-left: 0.5rem;
 	text-align: left;
@@ -109,7 +106,6 @@
 	color: #ffffff;
 }
 
-/* VALIDATION */
 .validation-section {
 	margin: 0 auto;
 	width: 90%;
@@ -119,7 +115,6 @@
 	border-radius: 10px;
 	margin: 0 auto;
 	max-width: 500px;
-	/* padding: 1rem; */
 }
 .feedback-header {
 	font-weight: 600;
@@ -178,7 +173,7 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
 	.game-container {
-		width: 80%;	
+		width: 80%;
 	}
 
 	.validation-comment {
@@ -198,12 +193,4 @@
 	.correct-with-issue {
 		padding-bottom: 0;
 	}
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
 }
