@@ -1,30 +1,5 @@
+import { actionTypes } from './types';
 import VERB_DATA from '../data/data';
-
-export const actionTypes = {
-	SET_DISPLAY_LANGUAGE: 'SET_DISPLAY_LANGUAGE',
-	TOGGLE_TENSE: 'TOGGLE_TENSE',
-	TOGGLE_PRONOUN: 'TOGGLE_PRONOUN',
-	SET_IRREGULAR: 'SET_IRREGULAR',
-	SET_REFLEXIVE: 'SET_REFLEXIVE',
-	SET_SELECTED_VERBS: 'SET_SELECTED_VERBS',
-	SET_USER_DEFINED_VERBS: 'SET_USER_DEFINED_VERBS',
-	SET_SCORE: 'SET_SCORE',
-	SET_TARGET_SCORE: 'SET_TARGET_SCORE',
-	TOGGLE_CURRENTLY_PLAYING: 'TOGGLE_CURRENTLY_PLAYING',
-	SET_QUESTION_LIST: 'SET_QUESTION_LIST',
-	SET_ANSWER_LIST: 'SET_ANSWER_LIST',
-	SET_CURRENT_QUESTION: 'SET_CURRENT_QUESTION',
-	SET_USER_ANSWER: 'SET_USER_ANSWER',
-	SET_ERRORS: 'SET_ERRORS',
-};
-
-export const verbOptions = {
-	ALL: 'ALL',
-	COMMON: 'COMMON',
-	USER_DEFINED: 'USER_DEFINED',
-	INCLUDE: 'INCLUDE',
-	EXCLUDE: 'EXCLUDE',
-};
 
 export function setDisplayLanguage(language) {
 	return { type: actionTypes.SET_DISPLAY_LANGUAGE, language };
@@ -104,4 +79,8 @@ export function setCurrentQuestion(
 
 export function setErrors(errors) {
 	return { type: actionTypes.SET_ERRORS, errors };
+}
+
+export function toggleIsLoading(){
+	return { type: actionTypes.SET_IS_LOADING }
 }

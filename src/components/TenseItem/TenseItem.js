@@ -5,22 +5,22 @@ import './TenseItem.css';
 export default function TenseItem(props) {
 	const displayLanguage = useSelector((state) => state.displayLanguage);
 
-	console.log(props.id);
 	return (
-		<div>
-			<label className="checkbox-container">
+		<div className="tense-item-container">
+			<label className="tense-item">
 				{displayLanguage === 'ENG' ? props.name : props.nameESP}
 				<input
+					className="tense-item-checkbox"
 					type="checkbox"
 					defaultChecked={props.selected}
 					onChange={props.onClick}
 				/>
 				<span className="checkmark"></span>
+				<div className="example">
+					{displayLanguage === 'ENG' ? 'e.g. ' : 'p. ej. '}
+					{props.example}
+				</div>
 			</label>
-			<div className="example">
-				{displayLanguage === 'ENG' ? 'e.g. ' : 'p. ej. '}
-				{props.example}
-			</div>
 		</div>
 	);
 }

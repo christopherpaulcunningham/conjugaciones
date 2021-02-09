@@ -1,0 +1,40 @@
+.error-message-container {
+	margin: 0.5rem auto 0;
+	/* text-align: center; */
+}
+.warning-image {
+	margin: 0 0.5rem 0 0;
+	vertical-align: middle;
+	width: 1rem;
+}
+.error-text {
+	color: #ff0000;
+	display: inline-block;
+	font-size: 0.8rem;
+	line-height: 1.25rem;
+	vertical-align: middle;
+}
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+	.error-text {
+		font-size: 0.9rem;
+		line-height: 1.25rem;
+	}
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+	.settings-container {
+		margin: auto;
+		width: 50%;
+	}
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+}
