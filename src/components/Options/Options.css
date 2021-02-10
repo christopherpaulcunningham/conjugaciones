@@ -2,9 +2,10 @@
 	background-color: #ffffff;
 	border: 2px solid #ffb68c;
 	border-radius: 10px;
-	margin: 0 auto 6rem;
+	margin: 0 auto 4rem;
 	max-width: 1400px;
 	min-height: 50rem;
+	position: relative;
 	width: 90%;
 }
 
@@ -47,16 +48,8 @@
 	}
 	.vertical-line {
 		display: block;
-		border-left: 1px solid #ffb68c;		
+		border-left: 1px solid #ffb68c;
 		left: 50%;
 		margin: 1rem -0.5px 1rem 0;
 	}
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
 }

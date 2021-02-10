@@ -10,7 +10,6 @@ import {
 	setQuestionList,
 	toggleCurrentlyPlaying,
 	setCurrentQuestion,
-	setScore,
 	setTargetScore,
 	setErrors,
 	setUserAnswer,
@@ -93,6 +92,7 @@ const VerbSettings = () => {
 				verbSettings,
 				targetScore
 			);
+
 			dispatch(setQuestionList(questionList));
 
 			// Check that the number of questions matches the target score. With custom verbs, this may not be the case.
@@ -123,7 +123,6 @@ const VerbSettings = () => {
 	function resetGameState() {
 		dispatch(setUserAnswer(''));
 		dispatch(setAnswerList([]));
-		dispatch(setScore(0));
 	}
 
 	function handleSubmitClick() {
@@ -153,14 +152,11 @@ const VerbSettings = () => {
 						key={pronoun.pronoun}
 						id={pronoun.pronoun}
 						name={pronoun.name}
-						selected={pronoun.selected}
-						onClick={() => dispatch(togglePronoun(pronoun))}
+						checked={pronoun.selected}
+						onChange={() => dispatch(togglePronoun(pronoun))}
 					/>
 				))}
 			</div>
-			{/* <div className="settings-section-header">
-				{displayLanguage === 'ENG' ? 'Verb Types' : 'Tipos de Verbos'}
-			</div> */}
 			<div className="settings-section">
 				<span className="settings-section-header">
 					{displayLanguage === 'ENG' ? 'Irregular Verbs' : 'Verbos Irregulares'}

@@ -12,10 +12,10 @@ const Footer = () => {
 			<div className="copyright">Christopher Cunningham © {currentYear}</div>
 			<a
 				href="https://github.com/christopherpaulcunningham/conjugaciones"
-				target="_blank"
+				target="_blank" rel="noreferrer"
 				className="footer-logo"
 			>
-				<img src={githubLogo} />
+				<img src={githubLogo} alt="github logo" />
 			</a>
 		</div>
 	);

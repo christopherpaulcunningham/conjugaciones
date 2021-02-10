@@ -27,7 +27,7 @@ const Header = () => {
 		<nav className="header-container">
 			<div className="header">
 				<div className="header-title">
-					<img src={logo} className="logo-img" />
+					<img src={logo} className="logo-img" alt="logo" />
 					<span className="header-text">conjugaciones</span>
 				</div>
 				<ul className="nav-menu">

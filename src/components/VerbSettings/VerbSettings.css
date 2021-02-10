@@ -1,6 +1,4 @@
 .settings-container {
-	/* height: auto; */
-	/* margin-bottom: 2rem; */
 	overflow: hidden;
 	padding: 0.5rem 1rem;
 	position: relative;
@@ -60,16 +58,10 @@
 	font-size: 1rem;
 	margin: 1.5rem 0 1.5rem;
 	padding: 0.75rem 1.5rem;
-
-	/* position: absolute;
-	bottom: 0;
-	right: 1rem; */
 }
 .btn-start:hover {
 	background-color: #0f7c1e;
 }
-
-
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -91,14 +83,4 @@
 		padding: 0.5rem 2rem;
 		width: 50%;
 	}
-
-	
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
 }

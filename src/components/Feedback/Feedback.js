@@ -1,8 +1,12 @@
 import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
-import { toggleCurrentlyPlaying } from '../../actions/gameActions';
+import {
+	toggleCurrentlyPlaying,
+	setTargetScore,
+	setScore,
+} from '../../actions/gameActions';
 
 import Loading from '../Loading/Loading';
 import ReviewQuestion from '../ReviewQuestion/ReviewQuestion';
@@ -10,7 +14,6 @@ import './Feedback.css';
 
 const Feedback = () => {
 	const dispatch = useDispatch();
-	const history = useHistory();
 	const displayLanguage = useSelector((state) => state.displayLanguage);
 	const isLoading = useSelector((state) => state.isLoading);
 	const score = useSelector((state) => state.score);
@@ -19,11 +22,17 @@ const Feedback = () => {
 	const answerList = useSelector((state) => state.answerList);
 
 	function handleClick() {
-		dispatch(toggleCurrentlyPlaying());
-		history.push('/');
+		// End the game and redirect.
+		resetGame();
 	}
 
-	const finalScore = ((score / targetScore) * 100);
+	const resetGame = () => {
+		dispatch(toggleCurrentlyPlaying());
+		dispatch(setTargetScore(10));
+		dispatch(setScore(0));
+	};
+
+	const finalScore = Math.floor((score / targetScore) * 100);
 
 	return (
 		<div className="feedback-container">
@@ -49,9 +58,11 @@ const Feedback = () => {
 			))}
 			<div className="flex-container"></div>
 			<div className="button-section">
-				<button id="btn-finish" className="btn-finish" onClick={handleClick}>
-					{displayLanguage === 'ENG' ? 'FINISH' : 'FINALIZAR'}
-				</button>
+				<Link to="/">
+					<button id="btn-finish" className="btn-finish" onClick={handleClick}>
+						{displayLanguage === 'ENG' ? 'FINISH' : 'FINALIZAR'}
+					</button>
+				</Link>
 			</div>
 		</div>
 	);

@@ -2,16 +2,18 @@
 	background-color: #ffffff;
 	border: 2px solid #ffb68c;
 	border-radius: 10px;
-	min-height: 40rem;
+	/* min-height: 40rem; */
 	margin: 0 auto 6rem;
 	max-width: 1200px;
-	overflow: hidden;
 	padding: 1rem;
+	/* overflow: hidden; */
+	padding-bottom: 5rem;
+	position: relative;
 	text-align: center;
 	width: 90%;
 }
 
-.loading {	
+.loading {
 	background-color: #ffffff;
 	border-radius: 10px;
 	position: absolute;
@@ -48,12 +50,10 @@
 	font-size: 1rem;
 	margin: 1rem 0 0;
 	padding: 0.75rem 1.5rem;
-	/* width: 7rem; */
 }
 .btn-finish:hover {
 	background-color: #0f7c1e;
 }
-
 
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) {
@@ -68,12 +68,4 @@
 		width: 100%;
 		text-align: center;
 	}
-}
-
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-}
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
 }

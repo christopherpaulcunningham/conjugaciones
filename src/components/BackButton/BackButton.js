@@ -2,7 +2,13 @@ import React from 'react';
 import { useDispatch } from 'react-redux';
 import { Link } from 'react-router-dom';
 
-import { toggleCurrentlyPlaying } from '../../actions/gameActions';
+import {
+	toggleCurrentlyPlaying,
+	setUserAnswer,
+	setAnswerList,
+	setTargetScore,
+	setScore,
+} from '../../actions/gameActions';
 import previousIcon from '../../assets/images/previous.png';
 import './BackButton.css';
 
@@ -11,7 +17,15 @@ const BackButton = (props) => {
 
 	const handleBackClick = () => {
 		// End the game and redirect.
+		resetGame();
+	};
+
+	const resetGame = () => {
 		dispatch(toggleCurrentlyPlaying());
+		dispatch(setUserAnswer(''));
+		dispatch(setAnswerList([]));
+		dispatch(setTargetScore(10));
+		dispatch(setScore(0));
 	};
 
 	return (
