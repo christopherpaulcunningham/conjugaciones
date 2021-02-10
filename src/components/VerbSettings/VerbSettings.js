@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import { useSelector, useDispatch } from 'react-redux';
 import {
@@ -31,6 +31,7 @@ const VerbSettings = () => {
 	const verbSettings = useSelector((state) => state.verbSettings);
 	const targetScore = useSelector((state) => state.targetScore);
 	const errors = useSelector((state) => state.errors);
+	const [disableButton, setDisableButton] = useState(false);
 	const dispatch = useDispatch();
 	const history = useHistory();
 
@@ -116,7 +117,7 @@ const VerbSettings = () => {
 			//Start the game.
 			dispatch(toggleCurrentlyPlaying());
 			history.push('/game');
-		}, 1000);
+		}, 750);
 	}
 
 	// Reset the game.
@@ -126,6 +127,9 @@ const VerbSettings = () => {
 	}
 
 	function handleSubmitClick() {
+			// Disable the button.
+			setDisableButton(true);
+			
 		if (validateForm()) {
 			setUpGame();
 		}
@@ -260,6 +264,7 @@ const VerbSettings = () => {
 			<div className="button-section">
 				<button
 					type="submit"
+					disabled={disableButton}
 					id="btn-start"
 					className="btn-start"
 					onClick={handleSubmitClick}
