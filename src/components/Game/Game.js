@@ -45,7 +45,9 @@ const Game = () => {
 	const specialCharacters = ['á', 'é', 'í', 'ó', 'ú', 'ñ'];
 
 	const correct = new Audio(correctTone);
+	correct.volume = 0.25;
 	const incorrect = new Audio(incorrectTone);
+	incorrect.volume = 0.25;
 
 	function specialCharacterClick(evt) {
 		// Add the special character to the user's answer. Check first if the answer field is empty.
@@ -236,6 +238,7 @@ const Game = () => {
 							<input
 								id="answer-input"
 								className="answer-input"
+								autoComplete="off"
 								autoFocus
 								value={userAnswer}
 								onChange={(event) =>

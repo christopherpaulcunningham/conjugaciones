@@ -1,6 +1,6 @@
 import React from 'react';
+import { useHistory } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
-import { Link } from 'react-router-dom';
 
 import {
 	toggleCurrentlyPlaying,
@@ -14,10 +14,20 @@ import './BackButton.css';
 
 const BackButton = (props) => {
 	const dispatch = useDispatch();
+	const history = useHistory();
 
 	const handleBackClick = () => {
-		// End the game and redirect.
-		resetGame();
+		if (
+			window.confirm(
+				props.displayLanguage === 'ENG'
+					? 'Are you sure you wish to exit the game?'
+					: '¿Estás seguro de que quieres terminar el juego?'
+			)
+		) {
+			// End the game and redirect.
+			resetGame();
+			history.push('/');
+		}
 	};
 
 	const resetGame = () => {
@@ -30,24 +40,15 @@ const BackButton = (props) => {
 
 	return (
 		<div className="back-button-container">
-			<Link to="/">
-				<input
-					id="btn-previous"
-					type="image"
-					src={previousIcon}
-					onClick={() => {
-						if (
-							window.confirm(
-								props.displayLanguage === 'ENG'
-									? 'Are you sure you wish to exit the game?'
-									: '¿Estás seguro de que quieres terminar el juego?'
-							)
-						)
-							handleBackClick();
-					}}
-					alt="Quit game"
-				/>
-			</Link>
+			<input
+				id="btn-previous"
+				type="image"
+				src={previousIcon}
+				onClick={() => {
+					handleBackClick();
+				}}
+				alt="Quit game"
+			/>
 		</div>
 	);
 };
