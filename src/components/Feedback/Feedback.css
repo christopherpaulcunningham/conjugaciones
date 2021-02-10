@@ -2,11 +2,13 @@
 	background-color: #ffffff;
 	border: 2px solid #ffb68c;
 	border-radius: 10px;
-	min-height: 40rem;
+	/* min-height: 40rem; */
 	margin: 0 auto 6rem;
 	max-width: 1200px;
-	overflow: hidden;
 	padding: 1rem;
+	/* overflow: hidden; */
+	padding-bottom: 5rem;
+	position: relative;
 	text-align: center;
 	width: 90%;
 }

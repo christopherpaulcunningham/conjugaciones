@@ -2,9 +2,10 @@
 	background-color: #ffffff;
 	border: 2px solid #ffb68c;
 	border-radius: 10px;
-	margin: 0 auto 6rem;
+	margin: 0 auto 4rem;
 	max-width: 1400px;
 	min-height: 50rem;
+	position: relative;
 	width: 90%;
 }
 

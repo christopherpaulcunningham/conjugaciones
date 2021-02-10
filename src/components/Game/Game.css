@@ -3,9 +3,10 @@
 	border: 2px solid #ffb68c;
 	border-radius: 10px;
 	height: auto;
-	margin: 0 auto 6rem;
+	margin: 0 auto 4rem;
 	max-width: 1400px;
-	overflow: hidden;
+	padding-bottom: 5rem;
+	position: relative;
 	width: 90%;
 }
 

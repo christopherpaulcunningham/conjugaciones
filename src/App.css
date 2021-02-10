@@ -13,5 +13,5 @@
     width: 100%;
 }
 .full-height {
-	min-height: 100vh;
+	min-height: calc(100vh - 6.5rem);
 }

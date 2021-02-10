@@ -9,8 +9,8 @@ export default function PronounItem(props) {
 				<input
 					className="pronoun-item-checkbox"
 					type="checkbox"
-					defaultChecked={props.selected}
-					onChange={props.onClick}
+					checked={props.checked}
+					onChange={props.onChange}
 				/>
 				<span className="checkmark"></span>
 			</label>
