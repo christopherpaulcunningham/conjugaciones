@@ -126,11 +126,10 @@ const VerbSettings = () => {
 		dispatch(setAnswerList([]));
 	}
 
-	function handleSubmitClick() {
-			// Disable the button.
-			setDisableButton(true);
-			
+	function handleSubmitClick() {			
 		if (validateForm()) {
+			// Disable the Start button and set up the game.
+			setDisableButton(true);
 			setUpGame();
 		}
 	}
